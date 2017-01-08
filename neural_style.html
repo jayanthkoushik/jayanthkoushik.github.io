@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Jayanth Koushik | neural-style</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ekko-lightbox.min.css">
+  <style>
+    .thumb {
+      margin-right: -20px;
+      margin-bottom: 10px;
+    }
+
+    .thumb > img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body style="padding-bottom: 2rem; padding-top: 2rem">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>neural-style</h1>
+
+      <p>
+        This page contains pre-trained models and examples from
+        <a href="https://github.com/jayanthkoushik/neural-style">my implementation</a>
+        of style transfer algorithms. Everything here is based on the method described
+        by Justin Johnson, Alexandre Alahi, and Fei-Fei Li in
+        <a href="https://arxiv.org/abs/1603.08155">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>.
+        My implementation has some modifications, the details of which can be found on the GitHub page. There, you can
+        also find instructions for training models, and using them to style images.
+      </p>
+
+      <p>
+        With a trained model, you can process images super fast - all it takes is a single pass through a convolutional
+        neural network. Of course this needs a GPU which means you can't use very large images due to the limited memory
+        on GPUs. You <em>can</em> style much larger images on a CPU but it will take a lot of time and memory.
+        Styling this photo (4032x3024) took about 30 minutes, and more than 100 gigabytes of memory; but it makes for a pretty cool
+        wallpaper.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/original/fulls/tokyo.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="tokyo-udnie">
+      <img src="imgs/neural_style/original/thumbs/tokyo_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/tokyo_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="tokyo-udnie">
+      <img src="imgs/neural_style/udnie/thumbs/tokyo_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        The remaining images on this page are not so huge, and were processed in about 100 milliseconds. The original images
+        are shown below.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/original/fulls/chicago.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/chicago_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/karya.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/karya_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/ghc.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/ghc_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/stata.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/stata_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/bike.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/bike_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/peacock.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/peacock_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/tubingen.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/tubingen_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/hinton.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/hinton_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/golden_gate.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/golden_gate_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/original/fulls/odaiba.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="original">
+      <img src="imgs/neural_style/original/thumbs/odaiba_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        Next, I show these images styled by various paintings. For each style, the trained model file is provided.
+        All models were trained using the default argument values.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Udnie <small>Francis Picabia (1913)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/h3a1aqi5jn586fu/udnie.h5?raw=1">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/udnie/fulls/udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/chicago_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/chicago_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/karya_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/karya_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/ghc_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/ghc_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/stata_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/stata_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/bike_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/bike_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/peacock_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/peacock_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/tubingen_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/tubingen_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/hinton_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/hinton_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/golden_gate_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/golden_gate_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/udnie/fulls/odaiba_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="udnie">
+      <img src="imgs/neural_style/udnie/thumbs/odaiba_udnie_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Composition XIV <small>Piet Mondrian (1913)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/vx4tjeuplq28abe/mondrian_xiv.h5?raw=1">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/mondrian_xiv/fulls/mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/chicago_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/chicago_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/karya_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/karya_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/ghc_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/ghc_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/stata_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/stata_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/bike_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/bike_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/peacock_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/peacock_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/tubingen_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/tubingen_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/hinton_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/hinton_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/golden_gate_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/golden_gate_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/odaiba_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/odaiba_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>The Great Wave off Kanagawa <small>Hokusai (1830–1833)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/5y1alg73kf91svf/wave.h5?raw=1">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/wave/fulls/wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/chicago_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/chicago_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/karya_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/karya_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/ghc_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/ghc_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/stata_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/stata_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/bike_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/bike_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/peacock_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/peacock_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/tubingen_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/tubingen_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/hinton_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/hinton_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/golden_gate_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/golden_gate_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/wave/fulls/odaiba_wave.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="wave">
+      <img src="imgs/neural_style/wave/thumbs/odaiba_wave_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>One: Number 31 <small>Jackson Pollock (1950)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/8fgnx89io32cgcd/one31.h5?raw=1">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/one31/fulls/one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/chicago_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/chicago_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/karya_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/karya_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/ghc_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/ghc_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/stata_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/stata_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/bike_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/bike_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/peacock_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/peacock_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/tubingen_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/tubingen_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/hinton_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/hinton_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/golden_gate_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/golden_gate_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/one31/fulls/odaiba_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
+      <img src="imgs/neural_style/one31/thumbs/odaiba_one31_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Marilyn Diptych <small>Andy Warhol (1962)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/jgoacfndo35wqr3/marilyn.h5?raw=1">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/marilyn/fulls/marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/chicago_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/chicago_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/karya_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/karya_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/ghc_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/ghc_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/stata_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/stata_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/bike_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/bike_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/peacock_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/peacock_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/tubingen_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/tubingen_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/hinton_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/hinton_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/golden_gate_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/golden_gate_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/marilyn/fulls/odaiba_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
+      <img src="imgs/neural_style/marilyn/thumbs/odaiba_marilyn_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>The Kiss <small>Gustav Klimt (1907-1908)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/sffc4fq886uwoz0/kiss.h5?raw=1">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/kiss/fulls/kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/chicago_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/chicago_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/karya_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/karya_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/ghc_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/ghc_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/stata_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/stata_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/bike_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/bike_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/peacock_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/peacock_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/tubingen_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/tubingen_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/hinton_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/hinton_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/golden_gate_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/golden_gate_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kiss/fulls/odaiba_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
+      <img src="imgs/neural_style/kiss/thumbs/odaiba_kiss_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ekko-lightbox.min.js"></script>
+<script>
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49245567-2', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
