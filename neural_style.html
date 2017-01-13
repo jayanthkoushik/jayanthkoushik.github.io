@@ -40,18 +40,18 @@
         With a trained model, you can process images super fast - all it takes is a single pass through a convolutional
         neural network. Of course this needs a GPU which means you can't use very large images due to the limited memory
         on GPUs. You <em>can</em> style much larger images on a CPU but it will take a lot of time and memory.
-        Styling this photo (4032x3024) took about 30 minutes, and more than 100 gigabytes of memory; but it makes for a pretty cool
+        Styling this photo (4032x3024) took more than 5 minutes, and about 120 gigabytes of memory; but it makes for a pretty cool
         wallpaper.
       </p>
     </div>
   </div>
 
   <div class="row">
-    <a href="imgs/neural_style/original/fulls/tokyo.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="tokyo-udnie">
+    <a href="imgs/neural_style/original/fulls/tokyo.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="tokyo-stained-glass">
       <img src="imgs/neural_style/original/thumbs/tokyo_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/udnie/fulls/tokyo_udnie.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="tokyo-udnie">
-      <img src="imgs/neural_style/udnie/thumbs/tokyo_udnie_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/stained_glass/fulls/tokyo_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="tokyo-stained-glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/tokyo_stained_glass_thumb.jpg" class="img-thumbnail">
     </a>
   </div>
 
@@ -101,10 +101,199 @@
   <div class="row">
     <div class="col-xs-12">
       <p>
-        Next, I show these images styled by various paintings. For each style, the trained model file is provided.
-        Unless, specified otherwise, all models were trained using the default argument values.
+        Next, I show these images modified by various styles. For each style, the trained model file is provided.
+        Unless specified otherwise, default values were used for training arguments.
       </p>
     </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Stained Glass</h2>
+      <p>
+        [<a href="https://www.dropbox.com/s/rvew1uqqctm1s2z/stained_glass.h5?raw=1">model</a>]<br>
+        For this model, the style weight was set to 1e-4.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/stained_glass/fulls/stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/chicago_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/chicago_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/karya_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/karya_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/ghc_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/ghc_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/stata_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/stata_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/bike_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/bike_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/peacock_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/peacock_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/tubingen_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/tubingen_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/hinton_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/hinton_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/golden_gate_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/golden_gate_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/stained_glass/fulls/odaiba_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
+      <img src="imgs/neural_style/stained_glass/thumbs/odaiba_stained_glass_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Composition X <small>Wassily Kandinsky (1939)</small></h2>
+      <p>
+        [<a href="https://www.dropbox.com/s/we0haxq0730og2o/kandinsky_x.h5?raw=1">model</a>]<br>
+        For this model, the style size was set to 512.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/kandinsky_x/fulls/kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/chicago_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/chicago_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/karya_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/karya_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/ghc_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/ghc_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/stata_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/stata_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/bike_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/bike_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/peacock_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/peacock_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/tubingen_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/tubingen_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/hinton_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/hinton_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/golden_gate_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/golden_gate_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/kandinsky_x/fulls/odaiba_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
+      <img src="imgs/neural_style/kandinsky_x/thumbs/odaiba_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Portrait de Jean Metzinger <small>Robert Delaunay (1906)</small></h2>
+      <p>[<a href="https://www.dropbox.com/s/nuw57sdfyx0ngry/metzinger.h5?dl=0">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/metzinger/fulls/metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/chicago_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/chicago_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/karya_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/karya_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/ghc_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/ghc_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/stata_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/stata_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/bike_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/bike_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/peacock_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/peacock_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/tubingen_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/tubingen_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/hinton_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/hinton_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/golden_gate_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/golden_gate_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/metzinger/fulls/odaiba_metzinger.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="metzinger">
+      <img src="imgs/neural_style/metzinger/thumbs/odaiba_metzinger_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Composition XIV <small>Piet Mondrian (1913)</small></h2>
+      <p>
+        [<a href="https://www.dropbox.com/s/vx4tjeuplq28abe/mondrian_xiv.h5?raw=1">model</a>]<br>
+        For this model, the content weight was set to 10.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/mondrian_xiv/fulls/mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/chicago_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/chicago_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/karya_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/karya_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/ghc_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/ghc_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/stata_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/stata_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/bike_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/bike_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/peacock_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/peacock_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/tubingen_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/tubingen_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/hinton_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/hinton_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/golden_gate_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/golden_gate_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/mondrian_xiv/fulls/odaiba_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
+      <img src="imgs/neural_style/mondrian_xiv/thumbs/odaiba_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    </a>
   </div>
 
   <hr>
@@ -156,92 +345,47 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2>Stained Glass</h2>
+      <h2>Untitled, CR1091 <small>Jackson Pollock (1951)</small></h2>
       <p>
-        [<a href="https://www.dropbox.com/s/rvew1uqqctm1s2z/stained_glass.h5?raw=1">model</a>]<br>
-        For this model, the style weight was changed from the default value to 1e-4.
+        [<a href="https://www.dropbox.com/s/vzb6sutovkgd78x/pollock_untitled.h5?dl=0">model</a>]<br>
+        For this model, the content weight was set to 5, the style weight was set to 1e-4, and the style size was set to 400.
       </p>
     </div>
   </div>
 
   <div class="row">
-    <a href="imgs/neural_style/stained_glass/fulls/stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/chicago_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/chicago_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/chicago_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/chicago_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/karya_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/karya_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/karya_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/karya_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/ghc_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/ghc_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/ghc_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/ghc_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/stata_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/stata_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/stata_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/stata_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/bike_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/bike_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/bike_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/bike_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/peacock_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/peacock_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/peacock_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/peacock_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/tubingen_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/tubingen_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/tubingen_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/tubingen_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/hinton_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/hinton_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/hinton_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/hinton_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/golden_gate_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/golden_gate_stained_glass_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/golden_gate_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/golden_gate_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/stained_glass/fulls/odaiba_stained_glass.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="stained_glass">
-      <img src="imgs/neural_style/stained_glass/thumbs/odaiba_stained_glass_thumb.jpg" class="img-thumbnail">
-    </a>
-  </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Composition XIV <small>Piet Mondrian (1913)</small></h2>
-      <p>[<a href="https://www.dropbox.com/s/vx4tjeuplq28abe/mondrian_xiv.h5?raw=1">model</a>]</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <a href="imgs/neural_style/mondrian_xiv/fulls/mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/chicago_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/chicago_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/karya_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/karya_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/ghc_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/ghc_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/stata_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/stata_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/bike_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/bike_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/peacock_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/peacock_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/tubingen_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/tubingen_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/hinton_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/hinton_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/golden_gate_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/golden_gate_mondrian_xiv_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/mondrian_xiv/fulls/odaiba_mondrian_xiv.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="mondrian-xiv">
-      <img src="imgs/neural_style/mondrian_xiv/thumbs/odaiba_mondrian_xiv_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/pollock_untitled/fulls/odaiba_pollock_untitled.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="pollock_untitled">
+      <img src="imgs/neural_style/pollock_untitled/thumbs/odaiba_pollock_untitled_thumb.jpg" class="img-thumbnail">
     </a>
   </div>
 
@@ -294,44 +438,92 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2>Composition X <small>Wassily Kandinsky (1939)</small></h2>
-      <p>[<a href="https://www.dropbox.com/s/we0haxq0730og2o/kandinsky_x.h5?raw=1">model</a>]</p>
+      <h2>Cossacks <small>Wassily Kandinsky (1910)</small></h2>
+      <p>
+        [<a href="https://www.dropbox.com/s/5c9e2dx9axvephe/cossacks.h5?dl=0">model</a>]<br>
+        For this model, the content weight was set to 10.
+      </p>
     </div>
   </div>
 
   <div class="row">
-    <a href="imgs/neural_style/kandinsky_x/fulls/kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/chicago_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/chicago_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/chicago_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/chicago_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/karya_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/karya_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/karya_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/karya_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/ghc_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/ghc_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/ghc_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/ghc_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/stata_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/stata_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/stata_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/stata_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/bike_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/bike_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/bike_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/bike_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/peacock_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/peacock_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/peacock_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/peacock_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/tubingen_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/tubingen_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/tubingen_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/tubingen_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/hinton_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/hinton_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/hinton_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/hinton_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/golden_gate_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/golden_gate_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/golden_gate_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/golden_gate_cossacks_thumb.jpg" class="img-thumbnail">
     </a>
-    <a href="imgs/neural_style/kandinsky_x/fulls/odaiba_kandinsky_x.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kandinsky_x">
-      <img src="imgs/neural_style/kandinsky_x/thumbs/odaiba_kandinsky_x_thumb.jpg" class="img-thumbnail">
+    <a href="imgs/neural_style/cossacks/fulls/odaiba_cossacks.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="cossacks">
+      <img src="imgs/neural_style/cossacks/thumbs/odaiba_cossacks_thumb.jpg" class="img-thumbnail">
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Flames</h2>
+      <p>[<a href="https://www.dropbox.com/s/xclkj9k80kh9flj/flames.h5?dl=0">model</a>]</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <a href="imgs/neural_style/flames/fulls/flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/chicago_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/chicago_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/karya_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/karya_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/ghc_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/ghc_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/stata_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/stata_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/bike_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/bike_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/peacock_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/peacock_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/tubingen_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/tubingen_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/hinton_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/hinton_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/golden_gate_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/golden_gate_flames_thumb.jpg" class="img-thumbnail">
+    </a>
+    <a href="imgs/neural_style/flames/fulls/odaiba_flames.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="flames">
+      <img src="imgs/neural_style/flames/thumbs/odaiba_flames_thumb.jpg" class="img-thumbnail">
     </a>
   </div>
 
@@ -377,96 +569,6 @@
     </a>
     <a href="imgs/neural_style/one31/fulls/odaiba_one31.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="one31">
       <img src="imgs/neural_style/one31/thumbs/odaiba_one31_thumb.jpg" class="img-thumbnail">
-    </a>
-  </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Marilyn Diptych <small>Andy Warhol (1962)</small></h2>
-      <p>[<a href="https://www.dropbox.com/s/jgoacfndo35wqr3/marilyn.h5?raw=1">model</a>]</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <a href="imgs/neural_style/marilyn/fulls/marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/chicago_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/chicago_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/karya_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/karya_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/ghc_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/ghc_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/stata_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/stata_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/bike_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/bike_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/peacock_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/peacock_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/tubingen_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/tubingen_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/hinton_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/hinton_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/golden_gate_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/golden_gate_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/marilyn/fulls/odaiba_marilyn.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="marilyn">
-      <img src="imgs/neural_style/marilyn/thumbs/odaiba_marilyn_thumb.jpg" class="img-thumbnail">
-    </a>
-  </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>The Kiss <small>Gustav Klimt (1907-1908)</small></h2>
-      <p>[<a href="https://www.dropbox.com/s/sffc4fq886uwoz0/kiss.h5?raw=1">model</a>]</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <a href="imgs/neural_style/kiss/fulls/kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/chicago_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/chicago_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/karya_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/karya_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/ghc_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/ghc_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/stata_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/stata_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/bike_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/bike_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/peacock_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/peacock_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/tubingen_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/tubingen_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/hinton_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/hinton_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/golden_gate_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/golden_gate_kiss_thumb.jpg" class="img-thumbnail">
-    </a>
-    <a href="imgs/neural_style/kiss/fulls/odaiba_kiss.jpg" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="kiss">
-      <img src="imgs/neural_style/kiss/thumbs/odaiba_kiss_thumb.jpg" class="img-thumbnail">
     </a>
   </div>
 </div>
