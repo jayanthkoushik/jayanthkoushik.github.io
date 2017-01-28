@@ -1,0 +1,8 @@
+- desc: 'Understanding Convolutional Neural Networks'
+  links:
+    - arxiv: 'https://arxiv.org/abs/1605.09081'
+
+- desc: 'neural-style: Theano/Keras implementation of style transfer algorithms'
+  links:
+    - project: 'neural_style.html'
+    - code: 'https://github.com/jayanthkoushik/neural-style'

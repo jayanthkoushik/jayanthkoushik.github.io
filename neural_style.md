@@ -1,0 +1,97 @@
+---
+layout: default
+title: Jayanth Koushik | neural-style
+---
+
+# neural-style
+
+This page contains pre-trained models and examples from
+[my implementation](https://github.com/jayanthkoushik/neural-style)
+of style transfer algorithms. Everything here is based on the method described
+by Justin Johnson, Alexandre Alahi, and Fei-Fei Li in
+[Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155).
+My implementation has some modifications, the details of which can be found on the GitHub page. There, you can
+also find instructions for training models, and using them to style images.
+
+With a trained model, you can process images super fast - all it takes is a single pass through a convolutional
+neural network. Of course this needs a GPU which means you can't use very large images due to the limited memory
+on GPUs. You *can* style much larger images on a CPU but it will take a lot of time and memory.
+Styling this photo (4032x3024) took more than 5 minutes, and about 120 gigabytes of memory; but it makes for a pretty cool
+wallpaper.
+
+{% include img_gallery.html source="neural_style/xl" %}
+
+The remaining images on this page are not so huge, and were processed in about 100 milliseconds. The original images
+are shown below.
+
+{% include img_gallery.html source="neural_style/original" %}
+
+Next, I show these images modified by various styles. For each style, the trained model file is provided,
+and the first image in each section is the style image used for the model.
+Unless specified otherwise, default values were used for training arguments.
+
+---
+## Stained Glass
+{% include img_display.html source="neural_style/style/fulls/stained_glass.jpg" %}
+[[model](https://www.dropbox.com/s/rvew1uqqctm1s2z/stained_glass.h5?raw=1)]<br>
+For this model, the style weight was set to 1e-4.
+{% include img_gallery.html source="neural_style/stained_glass" %}
+
+---
+## Composition X <small>Wassily Kandinsky (1939)</small>
+{% include img_display.html source="neural_style/style/fulls/kandinsky_x.jpg" %}
+[[model](https://www.dropbox.com/s/we0haxq0730og2o/kandinsky_x.h5?raw=1)]<br>
+For this model, the style size was set to 512.
+{% include img_gallery.html source="neural_style/kandinsky_x" %}
+
+---
+## Portrait de Jean Metzinger <small>Robert Delaunay (1906)</small>
+{% include img_display.html source="neural_style/style/fulls/metzinger.jpg" %}
+[[model](https://www.dropbox.com/s/nuw57sdfyx0ngry/metzinger.h5?raw=1)]
+{% include img_gallery.html source="neural_style/metzinger" %}
+
+
+---
+## Composition XIV <small>Piet Mondrian (1913)</small>
+{% include img_display.html source="neural_style/style/fulls/mondrian_xiv.jpg" %}
+[[model](https://www.dropbox.com/s/vx4tjeuplq28abe/mondrian_xiv.h5?raw=1)]<br>
+For this model, the content weight was set to 10.
+{% include img_gallery.html source="neural_style/mondrian_xiv" %}
+
+---
+## Udnie <small>Francis Picabia (1913)</small>
+{% include img_display.html source="neural_style/style/fulls/udnie.jpg" %}
+[[model](https://www.dropbox.com/s/h3a1aqi5jn586fu/udnie.h5?raw=1)]
+{% include img_gallery.html source="neural_style/udnie" %}
+
+---
+## Untitled, CR1091 <small>Jackson Pollock (1951)</small>
+{% include img_display.html source="neural_style/style/fulls/pollock_untitled.jpg" %}
+[[model](https://www.dropbox.com/s/vzb6sutovkgd78x/pollock_untitled.h5?raw=1)]<br>
+For this model, the content weight was set to 5, the style weight was set to 1e-4, and the style size was set to 400.
+{% include img_gallery.html source="neural_style/pollock_untitled" %}
+
+---
+## The Great Wave off Kanagawa <small>Hokusai (1830–1833)</small>
+{% include img_display.html source="neural_style/style/fulls/wave.jpg" %}
+[[model](https://www.dropbox.com/s/5y1alg73kf91svf/wave.h5?raw=1)]
+{% include img_gallery.html source="neural_style/wave" %}
+
+---
+## Cossacks <small>Wassily Kandinsky (1910)</small>
+{% include img_display.html source="neural_style/style/fulls/cossacks.jpg" %}
+[[model](https://www.dropbox.com/s/5c9e2dx9axvephe/cossacks.h5?raw=1)]<br>
+For this model, the content weight was set to 10.
+{% include img_gallery.html source="neural_style/cossacks" %}
+
+---
+## Flames
+{% include img_display.html source="neural_style/style/fulls/flames.jpg" %}
+[[model](https://www.dropbox.com/s/xclkj9k80kh9flj/flames.h5?raw=1)]
+{% include img_gallery.html source="neural_style/flames" %}
+
+---
+## One: Number 31 <small>Jackson Pollock (1950)</small>
+{% include img_display.html source="neural_style/style/fulls/one31.jpg" %}
+[[model](https://www.dropbox.com/s/8fgnx89io32cgcd/one31.h5?raw=1)]
+{% include img_gallery.html source="neural_style/one31" %}

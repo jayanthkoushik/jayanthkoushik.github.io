@@ -1,0 +1,19 @@
+body {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+a.plain-black {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+}
+
+.thumb {
+  margin-right: -20px;
+  margin-bottom: 10px;
+}
+
+.thumb > img {
+  width: 100%;
+}

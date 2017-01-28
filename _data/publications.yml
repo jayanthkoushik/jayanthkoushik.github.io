@@ -1,0 +1,25 @@
+- title: 'Deep Multimodal Fusion for Persuasiveness Prediction'
+  equal-authors: ['Behnaz Nojavanasghari', 'Deepak Gopinath', 'Jayanth Koushik']
+  other-authors: ['Tadas Baltrušaitis', 'Louis-Philippe Morency']
+  status: 'ICMI 2016'
+  links:
+    - pdf: 'pdfs/deep_fusion.pdf'
+
+- title: 'Transformation Function Based Methods for Model Shift'
+  other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']
+  status: 'NIPS 2016 Workshop'
+  links:
+    - arxiv: 'https://arxiv.org/abs/1612.01020'
+
+- title: 'Improving Stochastic Gradient Descent with Feedback'
+  equal-authors: ['Jayanth Koushik', 'Hiroaki Hayashi']
+  status: 'Submitted to ICLR 2017'
+  links:
+    - arxiv: 'https://arxiv.org/abs/1611.01505'
+    - code: 'https://github.com/jayanthkoushik/sgd-feedback'
+    - poster: 'pdfs/improving_sgd_poster.pdf'
+
+- title: 'Open Domain Video Description Alignment'
+  equal-authors: ['Jayanth Koushik', 'Deepak Gopinath', 'Yuan Li']
+  other-authors: ['Louis-Philippe Morency']
+  status: 'Submitted to CVPR 2017'

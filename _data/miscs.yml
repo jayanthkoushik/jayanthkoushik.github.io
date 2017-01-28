@@ -1,0 +1,17 @@
+- desc: 'Screen saver desktop backgrounds for OS X'
+  links:
+    - code: 'https://github.com/jayanthkoushik/liveback'
+
+- desc: 'Theano utility functions'
+  links:
+    - code: 'https://github.com/jayanthkoushik/theano-utils'
+
+- desc: 'xkcd style comics made using <a href="http://cmx.io">Comix I/O</a> for a statistics class'
+  links:
+    - comic 1: 'http://cmx.io/#5fa9267eac1782bd43e1'
+    - comic 2: 'http://cmx.io/#fd2ae093a263483d726e'
+
+- desc: 'anti-2048: a variant of <a href="https://gabrielecirulli.github.io/2048/">2048</a> where the objective is to lose'
+  links:
+    - game: 'https://darkstar112358.github.io/anti-2048'
+    - code: 'https://github.com/darkstar112358/anti-2048'
