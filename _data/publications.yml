@@ -5,10 +5,10 @@
   links:
     - pdf: 'pdfs/deep_fusion.pdf'
 
-- title: 'Transformation Function Based Methods for Model Shift'
+- title: 'Hypothesis Transfer Learning via Transformation Functions'
   other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']
   links:
-    - arxiv: 'https://arxiv.org/abs/1612.01020'
+    - arxiv: 'http://arxiv.org/abs/1612.01020'
 
 - title: 'Improving Stochastic Gradient Descent with Feedback'
   equal-authors: ['Jayanth Koushik', 'Hiroaki Hayashi']
