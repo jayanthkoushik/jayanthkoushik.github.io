@@ -1,14 +1,14 @@
+- title: 'Hypothesis Transfer Learning via Transformation Functions'
+  other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']
+  links:
+    - arxiv: 'http://arxiv.org/abs/1612.01020'
+
 - title: 'Deep Multimodal Fusion for Persuasiveness Prediction'
   equal-authors: ['Behnaz Nojavanasghari', 'Deepak Gopinath', 'Jayanth Koushik']
   other-authors: ['Tadas Baltrušaitis', 'Louis-Philippe Morency']
   status: 'ICMI 2016'
   links:
     - pdf: 'pdfs/deep_fusion.pdf'
-
-- title: 'Hypothesis Transfer Learning via Transformation Functions'
-  other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']
-  links:
-    - arxiv: 'http://arxiv.org/abs/1612.01020'
 
 - title: 'Improving Stochastic Gradient Descent with Feedback'
   equal-authors: ['Jayanth Koushik', 'Hiroaki Hayashi']

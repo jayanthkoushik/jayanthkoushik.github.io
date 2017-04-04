@@ -1,7 +1,3 @@
-- desc: 'Screen saver desktop backgrounds for OS X'
-  links:
-    - code: 'https://github.com/jayanthkoushik/liveback'
-
 - desc: 'Theano utility functions'
   links:
     - code: 'https://github.com/jayanthkoushik/theano-utils'
