@@ -11,7 +11,7 @@ title: Jayanth Koushik
   {% include icon_link.html href="https://scholar.google.com/citations?user=XTqgW-EAAAAJ" icon="google-scholar-square" itype="ai" %}
   {% include icon_link.html href="https://twitter.com/jayanth_koushik" icon="twitter" itype="fa" %}
   <br style="display: block; content: ''; margin-top: .6em">
-  <a style="border: 1px solid dimgray; border-radius: 4px; padding: .4em" href="https://www.dropbox.com/s/268b0rp77imwvfu/resume.pdf?raw=1">Résumé</a>
+  <a style="border: 1px solid dimgray; border-radius: 4px; padding: .4em" href="https://jayanthkoushik.github.io/resume/main.pdf">Résumé</a>
 </p>
 
 I am a second year master's student at Carnegie Mellon University advised by [Prof. Aarti Singh](https://www.cs.cmu.edu/~aarti).
