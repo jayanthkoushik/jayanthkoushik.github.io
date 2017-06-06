@@ -6,7 +6,7 @@ title: Jayanth Koushik
 # Jayanth Koushik
 
 <p>
-  {% include icon_link.html href="mailto:jkoushik@cs.cmu.edu" icon="envelope" itype="fa" %}
+  {% include icon_link.html href="mailto:jnkoushik@gmail.com" icon="envelope" itype="fa" %}
   {% include icon_link.html href="https://www.github.com/jayanthkoushik" icon="github" itype="fa" %}
   {% include icon_link.html href="https://scholar.google.com/citations?user=XTqgW-EAAAAJ" icon="google-scholar-square" itype="ai" %}
   {% include icon_link.html href="https://twitter.com/jayanth_koushik" icon="twitter" itype="fa" %}
@@ -14,8 +14,7 @@ title: Jayanth Koushik
   <a style="border: 1px solid dimgray; border-radius: 4px; padding: .4em" href="https://jayanthkoushik.github.io/resume/main.pdf">Résumé</a>
 </p>
 
-I am a second year master's student at Carnegie Mellon University advised by [Prof. Aarti Singh](https://www.cs.cmu.edu/~aarti).
-I am interested in deep learning and its applications to computer vision.
+I am a PhD student at Carnegie Mellon University studying computational neuroscience and machine learning. I am advised by [Mike Tarr](http://tarrlabwiki.cnbc.cmu.edu/index.php/Tarr) and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
 
 ---
 ## Publications and Preprints
