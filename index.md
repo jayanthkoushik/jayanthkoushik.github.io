@@ -14,7 +14,7 @@ title: Jayanth Koushik
   <!-- <a style="border: 1px solid dimgray; border-radius: 4px; padding: .4em" href="https://jayanthkoushik.github.io/resume/main.pdf">Résumé</a> -->
 </p>
 
-I am a PhD student at Carnegie Mellon University studying computational neuroscience and machine learning. I am advised by [Mike Tarr](http://tarrlabwiki.cnbc.cmu.edu/index.php/Tarr) and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
+I am a PhD student at Carnegie Mellon University studying neural computation and machine learning. I am advised by [Mike Tarr](http://tarrlabwiki.cnbc.cmu.edu/index.php/Tarr) and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
 
 ---
 ## Publications and Preprints
