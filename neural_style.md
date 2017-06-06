@@ -33,65 +33,65 @@ Unless specified otherwise, default values were used for training arguments.
 ---
 ## Stained Glass
 {% include img_display.html source="neural_style/style/fulls/stained_glass.jpg" %}
-[[model](https://www.dropbox.com/s/rvew1uqqctm1s2z/stained_glass.h5?raw=1)]<br>
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/stained_glass.h5)]<br>
 For this model, the style weight was set to 1e-4.
 {% include img_gallery.html source="neural_style/stained_glass" %}
 
 ---
 ## Composition X <small>Wassily Kandinsky (1939)</small>
 {% include img_display.html source="neural_style/style/fulls/kandinsky_x.jpg" %}
-[[model](https://www.dropbox.com/s/we0haxq0730og2o/kandinsky_x.h5?raw=1)]<br>
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/kandinsky_x.h5)]<br>
 For this model, the style size was set to 512.
 {% include img_gallery.html source="neural_style/kandinsky_x" %}
 
 ---
 ## Portrait de Jean Metzinger <small>Robert Delaunay (1906)</small>
 {% include img_display.html source="neural_style/style/fulls/metzinger.jpg" %}
-[[model](https://www.dropbox.com/s/nuw57sdfyx0ngry/metzinger.h5?raw=1)]
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/metzinger.h5)]
 {% include img_gallery.html source="neural_style/metzinger" %}
 
 
 ---
 ## Composition XIV <small>Piet Mondrian (1913)</small>
 {% include img_display.html source="neural_style/style/fulls/mondrian_xiv.jpg" %}
-[[model](https://www.dropbox.com/s/vx4tjeuplq28abe/mondrian_xiv.h5?raw=1)]<br>
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/mondrian_xiv.h5)]<br>
 For this model, the content weight was set to 10.
 {% include img_gallery.html source="neural_style/mondrian_xiv" %}
 
 ---
 ## Udnie <small>Francis Picabia (1913)</small>
 {% include img_display.html source="neural_style/style/fulls/udnie.jpg" %}
-[[model](https://www.dropbox.com/s/h3a1aqi5jn586fu/udnie.h5?raw=1)]
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/udnie.h5)]
 {% include img_gallery.html source="neural_style/udnie" %}
 
 ---
 ## Untitled, CR1091 <small>Jackson Pollock (1951)</small>
 {% include img_display.html source="neural_style/style/fulls/pollock_untitled.jpg" %}
-[[model](https://www.dropbox.com/s/vzb6sutovkgd78x/pollock_untitled.h5?raw=1)]<br>
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/pollock_untitled.h5)]<br>
 For this model, the content weight was set to 5, the style weight was set to 1e-4, and the style size was set to 400.
 {% include img_gallery.html source="neural_style/pollock_untitled" %}
 
 ---
 ## The Great Wave off Kanagawa <small>Hokusai (1830–1833)</small>
 {% include img_display.html source="neural_style/style/fulls/wave.jpg" %}
-[[model](https://www.dropbox.com/s/5y1alg73kf91svf/wave.h5?raw=1)]
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/wave.h5)]
 {% include img_gallery.html source="neural_style/wave" %}
 
 ---
 ## Cossacks <small>Wassily Kandinsky (1910)</small>
 {% include img_display.html source="neural_style/style/fulls/cossacks.jpg" %}
-[[model](https://www.dropbox.com/s/5c9e2dx9axvephe/cossacks.h5?raw=1)]<br>
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/cossacks.h5)]<br>
 For this model, the content weight was set to 10.
 {% include img_gallery.html source="neural_style/cossacks" %}
 
 ---
 ## Flames
 {% include img_display.html source="neural_style/style/fulls/flames.jpg" %}
-[[model](https://www.dropbox.com/s/xclkj9k80kh9flj/flames.h5?raw=1)]
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/flames.h5)]
 {% include img_gallery.html source="neural_style/flames" %}
 
 ---
 ## One: Number 31 <small>Jackson Pollock (1950)</small>
 {% include img_display.html source="neural_style/style/fulls/one31.jpg" %}
-[[model](https://www.dropbox.com/s/8fgnx89io32cgcd/one31.h5?raw=1)]
+[[model](https://github.com/jayanthkoushik/neural-style-models/raw/master/one31.h5)]
 {% include img_gallery.html source="neural_style/one31" %}
