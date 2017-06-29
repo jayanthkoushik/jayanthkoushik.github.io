@@ -1,7 +1,3 @@
-- desc: 'Theano utility functions'
-  links:
-    - code: 'https://github.com/jayanthkoushik/theano-utils'
-
 - desc: 'xkcd style comics made using <a href="http://cmx.io">Comix I/O</a> for a statistics class'
   links:
     - comic 1: 'http://cmx.io/#5fa9267eac1782bd43e1'
