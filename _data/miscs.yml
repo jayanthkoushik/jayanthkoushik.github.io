@@ -5,5 +5,5 @@
 
 - desc: 'anti-2048: a variant of <a href="https://gabrielecirulli.github.io/2048/">2048</a> where the objective is to lose'
   links:
-    - game: 'https://darkstar112358.github.io/anti-2048'
-    - code: 'https://github.com/darkstar112358/anti-2048'
+    - game: 'https://abhiskk.github.io/anti-2048/'
+    - code: 'https://github.com/abhiskk/anti-2048'
