@@ -1,7 +1,7 @@
 - desc: 'xkcd style comics made using <a href="http://cmx.io">Comix I/O</a> for a statistics class'
   links:
-    - comic 1: 'http://cmx.io/#5fa9267eac1782bd43e1'
-    - comic 2: 'http://cmx.io/#fd2ae093a263483d726e'
+    - comic 1: 'http://cmx.io/#66ff4674b15c12d0252bda4ee707b60a'
+    - comic 2: 'http://cmx.io/#9eba98e7d1a6bba5c220715411633b50'
 
 - desc: 'anti-2048: a variant of <a href="https://gabrielecirulli.github.io/2048/">2048</a> where the objective is to lose'
   links:
