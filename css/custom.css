@@ -1,6 +1,21 @@
+@font-face {
+  font-family: "_FuturaBook";
+  src: url(../fonts/futura_book.ttf);
+}
+
+@font-face {
+    font-family: "_FuturaMedium";
+    src: url(../fonts/futura_medium.ttf);
+}
+
 body {
+  font-family: "_FuturaBook";
   padding-bottom: 2rem;
   padding-top: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-family: "_FuturaMedium";
 }
 
 a.plain-black {
