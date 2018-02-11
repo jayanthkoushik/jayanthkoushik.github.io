@@ -14,5 +14,12 @@
 
 - title: 'Hypothesis Transfer Learning via Transformation Functions'
   other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']
+  status: 'NIPS 2017'
   links:
     - arxiv: 'http://arxiv.org/abs/1612.01020'
+
+- title: 'A Brain Phenotype for Stressor‐Evoked Blood Pressure Reactivity'
+  other-authors: ['Peter J. Gianaros', 'Lei K. Sheu', 'Fatma Uyar', 'Jayanth Koushik', 'J. Richard Jennings', 'Tor D. Wager', 'Aarti Singh', 'Timothy D. Verstynen']
+  status: 'JAHA 2017'
+  links:
+    - paper: 'http://jaha.ahajournals.org/content/6/9/e006053'
