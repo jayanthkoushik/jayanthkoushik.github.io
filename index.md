@@ -16,18 +16,14 @@ title: Jayanth Koushik
 
 I am a PhD student at Carnegie Mellon University studying computational neuroscience and machine learning. I am advised by [Mike Tarr](http://tarrlabwiki.cnbc.cmu.edu/index.php/Tarr) and [Aarti Singh](https://www.cs.cmu.edu/~aarti/). I am interested in developing machine learning algorithms, and using them to design neuroscience experiments. My current research is on real-time optimization in EEG.
 
----
 ## Publications and Preprints
 {% include pub_list.html list=site.data.publications %}
 
----
 ## Projects
 {% include detail_list.html list=site.data.projects %}
 
----
 ## Tutorials
 {% include detail_list.html list=site.data.tutorials %}
 
----
 ## Miscellaneous
 {% include detail_list.html list=site.data.miscs %}
