@@ -12,6 +12,8 @@ before_install:
 
 install:
   - bundle install
+
+script:
   - bundle exec jekyll build
 
 branches:
