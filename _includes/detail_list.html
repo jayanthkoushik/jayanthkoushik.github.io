@@ -1,12 +1,12 @@
 <ul>
 {% for item in include.list reversed %}
-  <li>
-    {{item.desc}}
-    {% for linkh in item.links %}
-      {% for link in linkh %}
-        [<a href="{{link[1]}}">{{link[0]}}</a>]
-      {% endfor %}
-    {% endfor %}
-  </li>
+<li>
+{{item.desc}}
+{% for linkh in item.links %}
+{% for link in linkh %}
+[<a href="{{link[1]}}">{{link[0]}}</a>]
+{% endfor %}
+{% endfor %}
+</li>
 {% endfor %}
 </ul>
