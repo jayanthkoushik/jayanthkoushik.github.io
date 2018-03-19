@@ -8,6 +8,11 @@
     src: url(../fonts/futura_medium.ttf);
 }
 
+@font-face {
+    font-family: "_FuturaLight";
+    src: url(../fonts/futura_light.ttf);
+}
+
 body {
   font-family: "_FuturaBook";
   padding-bottom: 2rem;
@@ -15,7 +20,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, b, strong {
-  font-family: "_FuturaMedium";
+  font-family: "_FuturaLight";
 }
 
 a.plain-black {
