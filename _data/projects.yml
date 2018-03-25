@@ -4,5 +4,5 @@
 
 - desc: 'neural-style: Theano/Keras implementation of style transfer algorithms'
   links:
-    - project: 'neural_style.html'
+    - project: 'neural_style'
     - code: 'https://github.com/jayanthkoushik/neural-style'

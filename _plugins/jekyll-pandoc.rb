@@ -6,7 +6,17 @@ class Jekyll::Converters::Markdown::PandocProcessor
         @config = config
     end
     def convert(content)
-        @converter = PandocRuby.new(content, :from => :"markdown-markdown_in_html_blocks")
-        @converter.to_html(:katex)
+        @converter = PandocRuby.new(content,
+                                    :from => :"markdown-markdown_in_html_blocks")
+        @converter.to_html(:katex,
+                           :bibliography => "_includes/references.bib",
+                           :F => :"pandoc-crossref",
+                           :filter => :"pandoc-citeproc",
+                           :M =>    :"linkReferences=true\
+                                   -M figPrefix=Figure\
+                                   -M eqnPrefix=Equation\
+                                   -M tblPrefix=Table\
+                                   -M lstPrefix=List\
+                                   -M secPrefix=Section")
     end
 end

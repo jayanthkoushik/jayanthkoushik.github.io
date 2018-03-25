@@ -7,7 +7,36 @@ layout: compress
 <body>
 <div class="container">
 <div class="row">
-<div class="col-xs-12">
+<div class="col-12">
+<h1 id="title">{{page.title}}<br><small>{{page.subtitle}}</small></h1>
+
+{% if page.author %}
+<br>
+<div>
+<p class="lead">
+{% for author in page.author %}
+{{author}}{% unless forloop.last %}, {% endunless %}
+{% endfor %}
+
+{% if page.institute %}
+<br>
+{% for institute in page.institute %}
+{{institute}}{% unless forloop.last %}, {% endunless %}
+{% endfor %}
+{% endif %}
+</p>
+
+{% if page.date %}
+<p>{{page.date}}</p>
+{% endif %}
+
+{% if page.thanks %}
+<br>
+<small class="text-muted">{{page.thanks}}</small>
+{% endif %}
+</div>
+{% endif %}
+
 {{content}}
 </div>
 </div>

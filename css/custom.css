@@ -14,17 +14,17 @@
 }
 
 body {
-  font-family: "_FuturaBook";
+  font-family: "_FuturaBook" !important;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-h1, h2 {
-  font-family: "_FuturaLight";
+h1, h2, h3 {
+  font-family: "_FuturaLight" !important;
 }
 
-h3, h4, h5, h6, b, strong {
-  font-family: "_FuturaBook";
+h4, h5, h6, b, strong, th {
+  font-family: "_FuturaMedium" !important;
 }
 
 a.plain-black {
