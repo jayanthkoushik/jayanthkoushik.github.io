@@ -10,7 +10,7 @@
 \newcommand{\I}[1]{\mathbb{I}(#1)}
 \newcommand{\suml}{\sum\limits}
 \newcommand{\sumnl}{\sum\nolimits}
-\renewcommand{\v}[1]{\bm{\mathrm{#1}}}
+\renewcommand{\v}[1]{\mathbf{\mathrm{#1}}}
 \newcommand{\set}[1]{\left\{#1\right\}}
 \newcommand{\ts}[1]{^\mathrm{#1}}
 \newcommand{\argmin}{\mathop{\mathrm{arg\,min}}}
