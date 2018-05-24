@@ -14,8 +14,6 @@ title: Jayanth Koushik
   {% include icon_link.html href="https://twitter.com/jayanth_koushik"
      icon="twitter" itype="fa" %}
   <br style="display: block; content: ''; margin-top: .6em">
-  <!-- <a style="border: 1px solid dimgray; border-radius: 4px; padding: .4em"
-     href="https://jayanthkoushik.github.io/resume/main.pdf">Résumé</a> -->
 </p>
 
 I am a PhD student at Carnegie Mellon University studying computational
@@ -30,9 +28,6 @@ My current research is on real-time optimization in EEG.
 
 # Projects
 {% include detail_list.html list=site.data.projects %}
-
-# Tutorials
-{% include detail_list.html list=site.data.tutorials %}
 
 # Miscellaneous
 {% include detail_list.html list=site.data.miscs %}
