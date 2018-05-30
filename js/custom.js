@@ -6,6 +6,8 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
 renderMathInElement(document.body);
 
 $(document).ready(function () {
+    $("#refs").prepend("<h1>References</h1>")
+
     $("h5").replaceWith(function() { return $("<h6>", {"id": this.id, "html": $(this).html()}); });
     $("h4").replaceWith(function() { return $("<h5>", {"id": this.id, "html": $(this).html()}); });
     $("h3").replaceWith(function() { return $("<h4>", {"id": this.id, "html": $(this).html()}); });
@@ -17,6 +19,11 @@ $(document).ready(function () {
 
     $("table").addClass("table");
     $("thead").addClass("thead-light");
+
+    $("figure").addClass("text-center");
+    $("figure img").addClass("img-fluid");
+    $("figure").attr("style", "padding-top: 20px");
+    $("figcaption").attr("style", "padding-top: 20px");
 });
 
 (function (i, s, o, g, r, a, m) {

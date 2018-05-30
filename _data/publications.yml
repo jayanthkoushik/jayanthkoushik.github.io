@@ -5,12 +5,11 @@
   links:
     - pdf: 'pdfs/deep_fusion.pdf'
 
-- title: 'Improving Stochastic Gradient Descent with Feedback'
-  equal-authors: ['Jayanth Koushik', 'Hiroaki Hayashi']
+- title: 'Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rate'
+  equal-authors: [Hiroaki Hayashi', 'Jayanth Koushik']
+  other-authors: ['Graham Neubig']
   links:
-    - arxiv: 'https://arxiv.org/abs/1611.01505'
-    - code: 'https://github.com/jayanthkoushik/sgd-feedback'
-    - poster: 'pdfs/improving_sgd_poster.pdf'
+    - web: eve_paper
 
 - title: 'Hypothesis Transfer Learning via Transformation Functions'
   other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']

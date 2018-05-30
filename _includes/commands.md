@@ -16,5 +16,6 @@
 \newcommand{\argmin}{\mathop{\mathrm{arg\,min}}}
 \newcommand{\argmax}{\mathop{\mathrm{arg\,max}}}
 \renewcommand{\c}[1]{\overline{#1}}
-\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
-\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil{#1}\right\rceil}
+\newenvironment{widefig}{\renewenvironment{figure}{\begin{figure*}\centering}{\end{figure*}}}
