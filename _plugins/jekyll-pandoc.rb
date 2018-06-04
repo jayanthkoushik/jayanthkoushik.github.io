@@ -6,6 +6,14 @@ class Jekyll::Converters::Markdown::PandocProcessor
         @config = config
     end
     def convert(content)
+        acropat = /\\acrodef\{(.*?)\}\{(.*?)\}/
+        acros = content.scan(acropat)
+        acros.each do |acro|
+            pat = /\\acp?\{(#{acro[0]})\}/
+            content = content.sub(pat){|r| "#{acro[1]}" + (r[3] == "p" ? "s" : "") + " (#{r[$1]}" + (r[3] == "p" ? "s" : "") + ")"}
+        end
+        content = content.gsub(/\\ac[sp]?\{(.*?)\}/){|r| r[$1] + (r[3] == "p" ? "s" : "")}
+
         @converter = PandocRuby.new(content,
                                     :from => :"markdown-markdown_in_html_blocks")
         @converter.to_html(:katex,
