@@ -6,3 +6,7 @@
   links:
     - project: 'neural_style'
     - code: 'https://github.com/jayanthkoushik/neural-style'
+
+- desc: 'torch-gel: PyTorch implementation of group elastic-net'
+  links:
+    - code: 'https://github.com/jayanthkoushik/torch-gel'
