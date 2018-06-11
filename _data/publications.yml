@@ -5,11 +5,13 @@
   links:
     - pdf: 'pdfs/deep_fusion.pdf'
 
-- title: 'Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rate'
+- title: 'Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates'
   equal-authors: [Hiroaki Hayashi', 'Jayanth Koushik']
   other-authors: ['Graham Neubig']
   links:
     - web: eve_paper
+    - arxiv: 'http://arxiv.org/abs/1611.01505'
+    - code: 'http://github.com/rooa/eve'
 
 - title: 'Hypothesis Transfer Learning via Transformation Functions'
   other-authors: ['Simon S. Du', 'Jayanth Koushik', 'Aarti Singh', 'Barnabás Póczos']

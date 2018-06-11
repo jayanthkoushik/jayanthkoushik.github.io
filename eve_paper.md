@@ -1,5 +1,5 @@
 ---
-title: "Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rate"
+title: "Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates"
 author:
   - Hiroaki Hayashi^1,\*^
   - Jayanth Koushik^1,\*^
@@ -36,6 +36,7 @@ layout: default
 
 \acrodef{CNN}{Convolutional Neural Network}
 \acrodef{RNN}{Recurrent Neural Network}
+\acrodef{GRU}{Gated Recurrent Unit}
 \acrodef{SGD}{Stochastic Gradient Descent}
 \acrodef{PTB}{Penn Treebank}
 \acrodef{CIFAR 100}{CIFAR 100}
@@ -43,16 +44,15 @@ layout: default
 # Introduction {#sec:intro}
 Training deep neural networks is a challenging non-convex optimization problem.
 \ac{SGD} is a simple way to move towards local optima by following the negative
-(sub)gradient. However, vanilla \ac{SGD} struggles with making progress, and is
-insufficient for solving large-scale problems. One issue arises from the use of
-a global learning rate in vanilla \ac{SGD}. Due to ill-conditioning of the
-optimization problems, setting this learning rate is tricky. To prevent the loss
-from "bouncing around" or diverging in directions with high curvature, the
-learning rate must be kept small. But this leads to slow progress in directions
-with low curvature. In many problems, the sparsity of gradients creates an
-additional challenge for \ac{SGD}. Some features might occur very infrequently,
-but might be very informative. Therefore, these features should be given a large
-learning rate when observed.
+(sub)gradient. However, vanilla \ac{SGD} is slow in achieving convergence for
+large-scale problems. One issue arises from the use of a global learning rate,
+which is difficult to set. To prevent the loss from "bouncing around" or
+diverging in directions with high curvature, the learning rate must be kept
+small. But this leads to slow progress in directions with low curvature. In many
+problems, the sparsity of gradients creates an additional challenge for
+\ac{SGD}. Some parameters might be used very infrequently, but still be very
+informative. Therefore, these parameters should be given a large learning rate
+when observed.
 
 The issues highlighted above motivate the need for adaptive learning rates that
 are local to each parameter in the optimization problem. While there has been
@@ -72,15 +72,15 @@ step size. In many cases, this global learning rate is left at its default
 value; however, to get the best performance, it needs to be tuned, and also
 adapted throughout the training process. A common strategy is to decay the
 learning rate over time, which adds an additional hyperparameter, the decay
-strength, that needs to be chosen carefully. In this work, we address the
-problem of adapting the global learning rate with a simple method that
-incorporates "feedback" from the objective function.
+strength, that needs to be chosen carefully.
 
-Our algorithm, Eve, introduces a scalar coefficient $d_t$ which is used to adapt
-the global learning rate to be $\alpha_t = \alpha_1 / d_t$, where $\alpha_1$ is
-the initial learning rate. $d_t$ depends on the history of stochastic objective
+In this work, we address the problem of adapting the global learning rate with a
+simple method that incorporates "feedback" from the objective function. Our
+algorithm, Eve, introduces a scalar coefficient $d_t$ which is used to adapt the
+global learning rate to be $\alpha_t = \alpha_1 / d_t$, where $\alpha_1$ is the
+initial learning rate. $d_t$ depends on the history of stochastic objective
 function evaluations, and captures two properties of its behavior: variation in
-consecutive iterations and sub-optimality. Intuitively, high variations should
+consecutive iterations and sub-optimality. Intuitively, high variation should
 reduce the learning rate and high sub-optimality should increase the learning
 rate. We specifically apply this idea to Adam[@kingma2014adam], a popular method
 for training deep neural networks.
@@ -110,7 +110,7 @@ every some number of iterations, or reducing the learning rate when the loss on
 a held out validation set stalls. @smith2017cyclical proposes a schedule where
 the learning rate is varied cyclically between a range of values.
 
-@schaul2013no takes up the more ambitious goal of completely eliminating the
+@schaul2013no take up the more ambitious goal of completely eliminating the
 learning rate parameter, with a second-order method that computes the diagonal
 Hessian using the bbprop algorithm[@lecun1998efficient]. Note, however, that the
 method is only applicable under mean squared error loss. Finally, for convex
@@ -130,33 +130,26 @@ a stochastic objective function with parameters $\theta$, and let $\theta_t$ be
 the value of the parameters after time $t$. Let $f_t = f(\theta_t)$ and $g_t =
 \nabla_{\theta} f(\theta_t)$. Adam maintains a running average of the gradient
 given by
-
 $$
   m_t = \beta_1 m_{t-1} + (1 - \beta_1)g_t,
 $$ {#eq:m}
-
 with $m_0 = 0$. A correction term is applied to remove the bias caused by
 initializing with 0.
-
 $$
   \wh{m}_t = m_t / (1 - \beta_1^t).
 $$ {#eq:mhat}
-
 $\wh{m}_t$ is an unbiased estimate of the gradient's first moment assuming
 stationarity ($\E{\wh{m}_t} = \E{g_t}$). A similar term is computed using the
 squared gradients:
-
 $$
 \begin{aligned}
        v_t &= \beta_2 v_{t-1} + (1 - \beta_2)g_t^2. \\
   \wh{v}_t &= v_t / (1 - \beta_2^t).
 \end{aligned}
 $$ {#eq:vvhat}
-
 $\wh{v}_t$ is an unbiased estimate of the gradient's uncentered second moment
 ($\E{\wh{v}_t} = \E{g_t^2}$). Then, Adam updates parameters using the update
 equation
-
 $$
   \theta_{t+1} = \theta_t - \alpha_t\frac{\wh{m}_t}{\sqrt{\wh{v}_t} + \epsilon}.
 $$ {#eq:theta}
@@ -177,39 +170,32 @@ quick progress, and if we are close to the minimum, we should take small steps.
 Hence we would like the learning rate to depend directly on $f_t - f^\star$.
 Putting these two together, our method scales the learning rate by $(f_t -
 f^\star) / |f_t - f_{t-1}|$:
-
 $$
     \alpha_t
   = \frac{\alpha_1}{d_t}
   = \alpha_1\frac{f_t - f^\star}{|f_t - f_{t-1}|}.
 $$ {#eq:alpha}
-
 However, this simple method is not stable because once the loss increases, the
 increase of numerator in @eq:alpha directly increases the learning rate. This
 can result in the learning rate blowing up due to taking an even bigger step,
 causing the numerator to further increase, and so forth. To prevent this, we
 make modifications to stabilize the update rule by first replacing $f_t$ in the
 numerator of @eq:alpha with $\min\{f_t, f_{t-1}\}$. This will reduce the chance
-of the cycle mentioned above, by keeping the numerator at the same value if the
-loss increases. In addition, we clip the term with a range parameterized by a
-constant $c$ to avoid extreme values.
-
+of the vicious cycle mentioned above by keeping the numerator at the same value
+if the loss increases. In addition, we clip the term with a range parameterized
+by a constant $c$ to avoid extreme values.
 $$
   \wh{d}_t = \text{clip}(d_t, [1 / c, c]).
 $$ {#eq:dhat}
-
 Finally, for smoothness, we take a running average of the clipped $d_t$
-
 $$
   \wt{d}_t = \beta_3\wt{d}_{t-1} + (1 - \beta_3)\wh{d}_t.
 $$ {#eq:dtil}
-
 The learning rate is then given by $\alpha_t = \alpha_1 / \wt{d}_t$. Thus, the
 learning rate will be in the range $[\alpha_1 / c, c\alpha_1]$. Combining this
 with the Adam update rule gives our complete algorithm, which we call Eve, and
 is shown in @fig:alg. Below, the equations for computing $\wt{d}_t$ are
 summarized. We set $\wt{d}_1 = 1$, and for $t > 1$, we have
-
 $$
 \begin{aligned}
        d_t &= \frac{|f_t - f_{t-1}|}{\min\{f_t, f_{t-1}\} - f^\star}. \\
@@ -233,16 +219,15 @@ over other methods in optimizing complex, practical models.
 
 
 # Experiments {#sec:exp}
-Now we conduct experiments to compare Eve with other popular optimizers used for
-optimizing deep learning models. We use the same hyperparameter settings (as
-described in @fig:alg) for all experiments. We also conduct an experiment to
-study the behavior of Eve with respect to the new hyperparameters $\beta_3$ and
-$c$. For each experiment, we use the same random number seed when comparing
-different methods. This ensures same weight initializations (we use the scheme
-proposed by @glorot2010understanding for all experiments), and mini-batch
-splits. In all experiments, we use cross-entropy as the loss function, and since
-the models don't have explicit regularization, $f^\star$ is set to 0 for
-training Eve.
+Now we conduct experiments to compare Eve with other popular optimizers used in
+deep learning. We use the same hyperparameter settings (as described in
+@fig:alg) for all experiments. We also conduct an experiment to study the
+behavior of Eve with respect to the new hyperparameters $\beta_3$ and $c$. For
+each experiment, we use the same random number seed when comparing different
+methods. This ensures same weight initializations (we use the scheme proposed by
+@glorot2010understanding for all experiments), and mini-batch splits. In all
+experiments, we use cross-entropy as the loss function, and since the models
+don't have explicit regularization, $f^\star$ is set to 0 for training Eve.
 
 ## Training CNNs {#sec:exp_cnns}
 First we compare Eve with other optimizers for training a \ac{CNN}. The
@@ -280,9 +265,9 @@ was conducted over the same set of values.
 
 We construct a \ac{RNN} for character-level language modeling task on
 \ac{PTB}[@marcus1993building]. Specifically, the model consists of a 2-layer
-character-level GRU[@chung2014empirical] with hidden layers of size 256, with
-0.5 dropout between layers. The sequence length is fixed to 100 characters, and
-the vocabulary is kept at the original size.
+character-level \ac{GRU}[@chung2014empirical] with hidden layers of size 256,
+with 0.5 dropout between layers. The sequence length is fixed to 100 characters,
+and the vocabulary is kept at the original size.
 
 The results for training this model are shown in @fig:trloss(b). Different
 optimizers performed similarly on this task, with Eve achieving slightly higher
@@ -293,9 +278,10 @@ We also empirically compare Eve with three common decay policies: exponential
 ($\alpha_t = \alpha_1 \exp(-\gamma t)$), $1/t$ ($\alpha_t = \alpha_1 / (1 +
 \gamma t)$), and $1/\sqrt{t}$ ($\alpha_t = \alpha_1 / \sqrt{1 + \gamma t}$). We
 consider the same \acs{CIFAR 100} classification task described in
-@sec:exp_cnns, and use the same CNN model. We applied the three decay policies
-to Adam, and tuned both the initial learning rate and decay strength. Learning
-rate was again searched over the same set as in the previous experiments.
+@sec:exp_cnns, and use the same \ac{CNN} model. We applied the three decay
+policies to Adam, and tuned both the initial learning rate and decay strength.
+Learning rate was again searched over the same set as in the previous
+experiments.
 
 For $\gamma$, we searched over a different set of values for each of the decay
 policies, such that final learning rate after 100 epochs would be $\alpha_1 / k$
@@ -328,8 +314,8 @@ hyperparameters introduced over Adam: $\beta_3$ and $c$. We use the previously
 presented ResNet model on \acs{CIFAR 100}, and a \ac{RNN} model trained for
 question answering, on question 14 (picked randomly) of the bAbI-10k
 dataset[@weston2015towards]. The question answering model composes two separate
-GRUs (with hidden layers of size 256 each) for question sentences, and story
-passages.
+\acp{GRU} (with hidden layers of size 256 each) for question sentences, and
+story passages.
 
 We trained the models using Eve with $\beta_3$ in $\{0$, $0.00001$, $0.0001$,
 $0.001$, $0.01$, $0.1$, $0.3$, $0.5$, $0.7$, $0.9$, $0.99$, $0.999$, $0.9999$,
@@ -346,7 +332,7 @@ lead to performance close to the best. In general, for different models and/or
 tasks, not all hyperparameter settings lead to improved performance over Adam,
 and we did not observe any consistent trend in the performance across
 hyperparameters. However, the default values suggested in this paper
-consistently lead to better performance on a variety of tasks. We also note that
+consistently lead to good performance on a variety of tasks. We also note that
 the default hyperparameter values were not selected based on this experiment,
 but through an informal initial search using a smaller model.
 
