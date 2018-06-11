@@ -26,6 +26,9 @@ My current research is on real-time optimization in EEG.
 # Publications and Preprints
 {% include pub_list.html list=site.data.publications %}
 
+# Conference Presentations
+{% include pub_list.html list=site.data.presentations %}
+
 # Projects
 {% include detail_list.html list=site.data.projects %}
 
