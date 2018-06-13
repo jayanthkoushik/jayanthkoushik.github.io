@@ -3,18 +3,10 @@ layout: default
 title: Jayanth Koushik
 ---
 
-<p>
-  {% include icon_link.html href="mailto:jnkoushik@gmail.com"
-     icon="envelope" itype="fa" %}
-  {% include icon_link.html href="https://www.github.com/jayanthkoushik"
-     icon="github" itype="fa" %}
-  {% include icon_link.html
-     href="https://scholar.google.com/citations?user=XTqgW-EAAAAJ"
-     icon="google-scholar-square" itype="ai" %}
-  {% include icon_link.html href="https://twitter.com/jayanth_koushik"
-     icon="twitter" itype="fa" %}
-  <br style="display: block; content: ''; margin-top: .6em">
-</p>
+[<a href="mailto:jnkoushik@gmail.com">email</a>]
+[<a href="https://www.github.com/jayanthkoushik">github</a>]
+[<a href="https://scholar.google.com/citations?user=XTqgW-EAAAAJ">google scholar</a>]
+[<a href="https://twitter.com/jayanth_koushik">twitter</a>]
 
 I am a PhD student at Carnegie Mellon University studying computational
 neuroscience and machine learning. I am advised by
