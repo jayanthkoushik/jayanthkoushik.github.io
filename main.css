@@ -1,9 +1,0 @@
----
----
-{%- capture customcss -%}
-  {%- include_relative css/custom.css -%}
-{%- endcapture -%}
-{%- include_relative css/bootstrap.min.css -%}
-{%- include_relative css/ekko-lightbox.min.css -%}
-{%- include_relative css/katex.min.css -%}
-{{ customcss | sassc }}

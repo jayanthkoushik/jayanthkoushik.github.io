@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Jayanth Koushik
+permalink: index
 ---
 
 [<a href="mailto:jnkoushik@gmail.com">email</a>]

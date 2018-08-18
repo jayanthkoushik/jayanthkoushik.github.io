@@ -27,6 +27,7 @@ header-includes:
       \let\End\end
     }
 layout: default
+permalink: eve_paper
 ---
 
 \newcommand{\E}[2][]{\mathbb{E}_{#1}\left[#2\right]}

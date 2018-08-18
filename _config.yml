@@ -1,4 +1,4 @@
 plugins:
   - uglifier
 markdown: PandocProcessor
-exclude: [Gemfile, Gemfile.lock, css, js]
+exclude: [Gemfile, Gemfile.lock]
