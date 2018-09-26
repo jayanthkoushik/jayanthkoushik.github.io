@@ -6,7 +6,7 @@ permalink: index
 
 [<a href="mailto:jnkoushik@gmail.com">email</a>]
 [<a href="https://www.github.com/jayanthkoushik">github</a>]
-[<a href="https://scholar.google.com/citations?user=XTqgW-EAAAAJ">google scholar</a>]
+[<a href="https://scholar.google.com/citations?user=XTqgW-EAAAAJ">google&nbsp;scholar</a>]
 [<a href="https://twitter.com/jayanth_koushik">twitter</a>]
 
 I am a PhD student at Carnegie Mellon University studying computational
