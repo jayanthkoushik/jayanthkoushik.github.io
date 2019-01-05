@@ -11,3 +11,13 @@ body {
 .thumb > img {
   width: 100%;
 }
+
+abbr {
+  font-size: smaller;
+  font-variant: small-caps;
+}
+
+.abbr {
+  font-size: smaller;
+  font-variant: small-caps;
+}
