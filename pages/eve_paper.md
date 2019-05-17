@@ -1,13 +1,26 @@
 ---
 title: "Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates"
 author:
-  - Hiroaki Hayashi^1,\*^
-  - Jayanth Koushik^1,\*^
-  - Graham Neubig^1^
+  - name: Hiroaki Hayashi
+    affiliation:
+      id: 1
+      name: Carnegie Mellon University
+    email: hiroakih\@cs.cmu.edu
+    equalcontrib: true
+  - name: Jayanth Koushik
+    affiliation:
+      id: 1
+      name: Carnegie Mellon University
+    email: jkoushik\@cs.cmu.edu
+    equalcontrib: true
+  - name: Graham Neubig
+    affiliation:
+      id: 1
+      name: Carnegie Mellon University
+    email: gneubig\@cs.cmu.edu
 institute:
-  - ^1^Carnegie Mellon University
-email: \{hiroakih,jkoushik,gneubig\}\@cs.cmu.edu
-thanks: \*Equal contribution
+  - id: 1
+    name: Carnegie Mellon University
 abstract: Adaptive gradient methods for stochastic optimization adjust the
     learning rate for each parameter locally. However, there is also a global
     learning rate which must be tuned in order to get the best performance. In
@@ -19,18 +32,14 @@ abstract: Adaptive gradient methods for stochastic optimization adjust the
     _Eve_, outperforms Adam and other popular methods in training deep neural
     networks, like convolutional neural networks for image classification, and
     recurrent neural networks for language tasks.
-
-header-includes:
-  - \newcommand{\hide_from_pandoc}[1]{#1}
-  - \hide_from_pandoc{
-      \let\Begin\begin
-      \let\End\end
-    }
 layout: default
 permalink: eve_paper
 ---
 
-\newcommand{\E}[2][]{\mathbb{E}_{#1}\left[#2\right]}
+<div>
+{% include commands.md %}
+</div>
+
 \newcommand{\wh}[1]{\widehat{#1}}
 \newcommand{\wt}[1]{\widetilde{#1}}
 \newenvironment{widefig}{\renewenvironment{figure}{\begin{figure*}[!tb]\centering}{\end{figure*}}}{}

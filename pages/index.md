@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Jayanth Koushik
+layout: default
 permalink: index
 ---
 

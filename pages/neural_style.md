@@ -1,6 +1,6 @@
 ---
-layout: default
 title: neural-style
+layout: default
 permalink: neural_style
 ---
 

@@ -15,6 +15,25 @@ layout: compress
 <div class="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-8">
 <h1 id="title">{{page.title}}<br><small>{{page.subtitle}}</small></h1>
 
+{% if page.author %}
+<p>
+<ul class="lead list-inline">
+{% for author in page.author %}
+  <li class="list-inline-item">{{ author.name }}
+    <sup>
+      {{ author.affiliation.id }}{%- unless page.skipequal -%}{%- if author.equalcontrib -%},<span data-toggle="tooltip" data-placement="top" title="Equal contribution">*</span>{%- endif -%}{%- endunless -%}
+    </sup>
+  </li>
+{% endfor %}
+</ul>
+<ul class="list-inline">
+{% for institute in page.institute %}
+  <li class="list-inline-item"><sup>{{ institute.id }}</sup>{{ institute.name }}</li>
+{% endfor %}
+</ul>
+</p>
+{% endif %}
+
 {{content}}
 
 </div>
