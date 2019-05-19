@@ -1,3 +1,5 @@
+\let\Begin\begin
+\let\End\end
 \newenvironment{widefig}{\renewenvironment{figure}{\begin{figure*}[!tb]\centering}{\end{figure*}}}{}
 
 \newcommand{\e}{\epsilon}
