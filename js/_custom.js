@@ -24,4 +24,6 @@ $(document).ready(function () {
     $("figure img").addClass("img-fluid");
     $("figure").attr("style", "padding-top: 20px");
     $("figcaption").attr("style", "padding-top: 20px");
+
+    $("p").addClass("text-justify");
 });
