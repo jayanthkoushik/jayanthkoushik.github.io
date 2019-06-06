@@ -14,7 +14,7 @@ neuroscience and machine learning. I am advised by
 [Mike Tarr](https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/tarr-michael.html) and
 [Aarti Singh](https://www.cs.cmu.edu/~aarti/). I am interested in developing
 machine learning algorithms, and using them to design neuroscience experiments.
-My current research is on real-time optimization in EEG.
+My current research is on real-time optimization in <abbr title="electroencephalography">EEG</abbr>.
 
 # Publications and Preprints
 {% include pub_list.html list=site.data.publications %}
