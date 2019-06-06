@@ -18,6 +18,7 @@ class Jekyll::Converters::Markdown::PandocProcessor
         @converter = PandocRuby.new(content,
                                     :from => :"markdown-markdown_in_html_blocks")
         @converter.to_html(:katex,
+                           :N,
                            :bibliography => Dir.glob("_includes/references/*.bib").join(" --bibliography "),
                            :"default-image-extension" => :"png",
                            :F => :"pandoc-crossref",

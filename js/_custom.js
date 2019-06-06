@@ -26,4 +26,5 @@ $(document).ready(function () {
     $("figcaption").attr("style", "padding-top: 20px");
 
     $("p").addClass("text-justify");
+    $(".header-section-number").append(".").replaceWith(function() { return $("<small>", {"html": $(this).html()}); });
 });

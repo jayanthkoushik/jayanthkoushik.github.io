@@ -16,14 +16,14 @@ neuroscience and machine learning. I am advised by
 machine learning algorithms, and using them to design neuroscience experiments.
 My current research is on real-time optimization in <abbr title="electroencephalography">EEG</abbr>.
 
-# Publications and Preprints
+# Publications and Preprints {-}
 {% include pub_list.html list=site.data.publications %}
 
-# Conference Presentations
+# Conference Presentations {-}
 {% include pub_list.html list=site.data.presentations %}
 
-# Projects
+# Projects {-}
 {% include detail_list.html list=site.data.projects %}
 
-# Miscellaneous
+# Miscellaneous {-}
 {% include detail_list.html list=site.data.miscs %}
