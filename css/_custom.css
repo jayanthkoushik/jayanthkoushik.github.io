@@ -15,10 +15,12 @@ body {
 abbr {
   font-size: smaller;
   font-variant: small-caps;
+  letter-spacing: 0.1em;
   text-decoration: none !important;
 }
 
 .abbr {
   font-size: smaller;
   font-variant: small-caps;
+  letter-spacing: 0.1em;
 }
