@@ -15,6 +15,7 @@ body {
 abbr {
   font-size: smaller;
   font-variant: small-caps;
+  text-decoration: none !important;
 }
 
 .abbr {
