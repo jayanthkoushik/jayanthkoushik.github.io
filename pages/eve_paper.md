@@ -29,7 +29,7 @@ abstract: Adaptive gradient methods for stochastic optimization adjust the
     together. Specifically, we modify Adam, a popular method for training deep
     learning models, with a coefficient that captures properties of the
     objective function. Empirically, we show that our method, which we call
-    _Eve_, outperforms Adam and other popular methods in training deep neural
+    Eve, outperforms Adam and other popular methods in training deep neural
     networks, like convolutional neural networks for image classification, and
     recurrent neural networks for language tasks.
 layout: default
