@@ -11,7 +11,8 @@ class Jekyll::Converters::Markdown::PandocProcessor
         acros.each do |acro|
             pat = /\\acp?\{(#{acro[0]})\}/
             content = content.sub(pat){|r| "#{acro[1]}" + (r[3] == "p" ? "s" : "") + " (<span class='abbr'>#{r[$1]}" + (r[3] == "p" ? "s" : "") + "</span>)"}
-            content = content.gsub(pat){|r| "<abbr title='#{acro[1]}'>#{r[$1]}" + (r[3] == "p" ? "s" : "") + "</abbr>)"}
+            pat = /\\acs?p?\{(#{acro[0]})\}/
+            content = content.gsub(pat){|r| "<abbr title='#{acro[1]}'>#{r[$1]}" + (r[3] == "p" || r[4] == "p" ? "s" : "") + "</abbr>"}
         end
 
         @converter = PandocRuby.new(content,
