@@ -1,3 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(28, 28, 30);
+    color: white;
+  }
+}
+
 body {
   padding-bottom: 2rem;
   padding-top: 2rem;
