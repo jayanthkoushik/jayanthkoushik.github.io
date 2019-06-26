@@ -3,6 +3,11 @@
     background-color: rgb(28, 28, 30);
     color: white;
   }
+
+  figure img {
+    filter: invert(90%);
+    border: 1px solid black;
+  }
 }
 
 @media (min-width: 576px) {
