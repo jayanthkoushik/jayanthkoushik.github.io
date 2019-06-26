@@ -5,6 +5,13 @@
   }
 }
 
+@media (min-width: 576px) {
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
 body {
   padding-bottom: 2rem;
   padding-top: 2rem;
