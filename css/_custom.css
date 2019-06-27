@@ -4,6 +4,18 @@
     color: rgb(220, 220, 218);
   }
 
+  a:link {
+    color: DodgerBlue;
+  }
+
+  a:visited {
+    color: RoyalBlue;
+  }
+
+  a:hover {
+    color: SteelBlue;
+  }
+
   figure img {
     filter: invert(90%);
     border: 1px solid black;
