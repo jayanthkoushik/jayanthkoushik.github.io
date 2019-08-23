@@ -9,4 +9,4 @@ permalink: assets/main
 {%- include_relative _ekko-lightbox.min.js -%}
 {%- include_relative _katex.min.js -%}
 {%- include_relative _auto-render.min.js -%}
-{{ customjs | uglify }}
+{{- customjs | uglify -}}
