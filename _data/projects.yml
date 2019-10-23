@@ -1,3 +1,7 @@
+- desc: 'torch-gel: PyTorch implementation of group elastic-net'
+  links:
+    - code: 'https://github.com/jayanthkoushik/torch-gel'
+
 - desc: 'Understanding Convolutional Neural Networks'
   links:
     - arxiv: 'https://arxiv.org/abs/1605.09081'
@@ -6,7 +10,3 @@
   links:
     - project: 'neural_style'
     - code: 'https://github.com/jayanthkoushik/neural-style'
-
-- desc: 'torch-gel: PyTorch implementation of group elastic-net'
-  links:
-    - code: 'https://github.com/jayanthkoushik/torch-gel'

@@ -1,7 +1,7 @@
-- desc: Deriving the Backpropagation Equations
-  links:
-    - pdf: https://jayanthkoushik.github.io/tutorials/backprop/main.pdf
-
 - desc: Multiple Perspectives on Linear Regression
   links:
     - pdf: https://jayanthkoushik.github.io/tutorials/linear_regression/main.pdf
+
+- desc: Deriving the Backpropagation Equations
+  links:
+    - pdf: https://jayanthkoushik.github.io/tutorials/backprop/main.pdf
