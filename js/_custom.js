@@ -1,6 +1,10 @@
 $(document).on('click', '[data-toggle="lightbox"]', function (event) {
     event.preventDefault();
-    $(this).ekkoLightbox();
+    $(this).ekkoLightbox({
+        alwaysShowClose: true
+    });
 });
 
-renderMathInElement(document.body);
+$(document).ready(function () {
+    renderMathInElement(document.body);
+});
