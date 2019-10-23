@@ -1,5 +1,4 @@
 plugins:
   - uglifier
-  - jekyll-redirect-from
 markdown: PandocProcessor
-exclude: [Gemfile, Gemfile.lock, redirects.json]
+exclude: [Gemfile, Gemfile.lock]
