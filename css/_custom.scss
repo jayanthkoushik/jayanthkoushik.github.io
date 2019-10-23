@@ -1,0 +1,86 @@
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @media (prefers-color-scheme: dark) {
+    background-color: rgb(28, 28, 30);
+    color: rgb(188, 188, 186);
+    a {
+      &:link { color: DodgerBlue }
+      &:visited { color: RoyalBlue }
+      &:hover { color: SteelBlue }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+.img-gallery img {
+  width: 93%;
+}
+
+abbr {
+  font-size: smaller;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  text-decoration: none !important;
+}
+
+table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  td, th {
+    padding: .75rem;
+    vertical-align: top;
+  }
+  th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+}
+
+figure {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  img {
+    max-width: 100%;
+    height: auto;
+    @media (prefers-color-scheme: dark) {
+      filter: invert(90%);
+      border: 1px solid black;
+    }
+  }
+  figcaption {
+    margin-top: 1rem;
+  }
+}
+
+h1:not(#title) {
+  font-size: 2rem;
+  border-top: 1px solid;
+  padding-top: 0.75rem;
+}
+
+.header-section-number {
+  font-size: smaller;
+  font-weight: normal;
+  &:after {
+    content: ".";
+  }
+}
+
+#refs {
+  border-top: 1px solid;
+  padding-top: 0.5rem;
+  &:before {
+    content: "References";
+    font-size: 2rem;
+  }
+}
