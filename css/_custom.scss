@@ -23,7 +23,7 @@ body {
   width: 93%;
 }
 
-abbr {
+abbr, .abbr {
   font-size: smaller;
   font-variant: small-caps;
   letter-spacing: 0.1em;
@@ -60,6 +60,14 @@ figure {
   figcaption {
     margin-top: 1rem;
   }
+}
+
+.sup-left {
+  padding-right: 2px;
+}
+
+.sup-right {
+  padding-left: 2px;
 }
 
 h1:not(#title) {
