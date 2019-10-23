@@ -19,19 +19,18 @@ layout: compress
 <p>
 <ul class="lead list-inline">
 {% for author in page.author %}
-  <li class="list-inline-item">{{ author.name }}
-    <sup>
-      {{ author.affiliation.id }}{%- unless page.skipequal -%}{%- if author.equalcontrib -%},<span data-toggle="tooltip" data-placement="top" title="Equal contribution">*</span>{%- endif -%}{%- endunless -%}
-    </sup>
+  <li class="list-inline-item">
+    {{ author.name }}<sup class="sup-right">{{ author.affiliation.id }}{%- unless page.skipequal -%}{%- if author.equalcontrib -%},*{%- endif -%}{%- endunless -%}</sup>
   </li>
 {% endfor %}
 </ul>
 <ul class="list-inline">
 {% for institute in page.institute %}
-  <li class="list-inline-item"><sup>{{ institute.id }}</sup>{{ institute.name }}</li>
+  <li class="list-inline-item"><sup class="sup-left">{{ institute.id }}</sup>{{ institute.name }}</li>
 {% endfor %}
 </ul>
 </p>
+{%- unless page.skipequal -%}<p class="small"><sup class="sup-left">*</sup>Equal contribution</p>{% endunless %}
 {% endif %}
 
 {% if page.abstract %}

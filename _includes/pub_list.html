@@ -1,4 +1,4 @@
-{% for pub in include.list reversed %}
+{% for pub in include.list %}
 <p>
 <strong>{{pub.title}}</strong>
 {% for linkh in pub.links %}
@@ -7,7 +7,7 @@
 {% endfor %}
 {% endfor %}<br>
 {% for author in pub.equal-authors %}
-{{author}}<sup>*</sup>{% unless forloop.last %}, {% elsif pub.other-authors %}, {% endunless %}
+{{author}}<sup class="sup-right">*</sup>{% unless forloop.last %}, {% elsif pub.other-authors %}, {% endunless %}
 {% endfor %}
 {% for author in pub.other-authors %}
 {{author}}{% unless forloop.last %}, {% endunless %}
@@ -15,4 +15,4 @@
 {% if pub.status %} <i>{{pub.status}}</i><br> {% endif %}
 </p>
 {% endfor %}
-<p class="small"><sup>*</sup> Equal contribution</p>
+<p class="small"><sup class="sup-left">*</sup>Equal contribution</p>
