@@ -1,7 +1,9 @@
 {% capture iname %}{{include.source | split: "/" | last | split: "." | first}}{% endcapture %}
 {% capture iext %}{{include.source | split: "." | last}}{% endcapture %}
-<div class="row">
-<a href="imgs/{{include.source}}" class="col-12 col-sm-6 col-md-4 col-lg-3 thumb" data-toggle="lightbox" data-gallery="{{iname}}-single">
-<img src="imgs/{{include.source}}/../../thumbs/{{iname}}_thumb.{{iext}}" class="img-thumbnail">
+<div class="row img-display">
+<div class="col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+<a href="imgs/{{include.source}}" data-toggle="lightbox" data-gallery="{{iname}}-single">
+<img src="imgs/{{include.source}}/../../thumbs/{{iname}}_thumb.{{iext}}" class="img-fluid img-thumbnail">
 </a>
+</div>
 </div>
