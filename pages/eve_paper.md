@@ -149,7 +149,7 @@ $$
   \wh{m}_t = m_t / (1 - \beta_1^t).
 $$ {#eq:mhat}
 $\wh{m}_t$ is an unbiased estimate of the gradient's first moment assuming
-stationarity ($\E{\wh{m}_t} = \E{g_t}$). A similar term is computed using the
+stationarity ($\E{}{\wh{m}_t} = \E{}{g_t}$). A similar term is computed using the
 squared gradients:
 $$
 \begin{aligned}
@@ -158,7 +158,7 @@ $$
 \end{aligned}
 $$ {#eq:vvhat}
 $\wh{v}_t$ is an unbiased estimate of the gradient's uncentered second moment
-($\E{\wh{v}_t} = \E{g_t^2}$). Then, Adam updates parameters using the update
+($\E{}{\wh{v}_t} = \E{}{g_t^2}$). Then, Adam updates parameters using the update
 equation
 $$
   \theta_{t+1} = \theta_t - \alpha_t\frac{\wh{m}_t}{\sqrt{\wh{v}_t} + \epsilon}.
