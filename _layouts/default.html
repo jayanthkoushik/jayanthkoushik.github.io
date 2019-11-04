@@ -13,6 +13,13 @@ layout: compress
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-12 col-sm-12 col-md-11 col-lg-9 col-xl-8">
+<div class="text-right">
+  <!-- disabled by default in case javascript is unavailable -->
+  <button class="btn btn-link" id="theme-switch" disabled>
+    <span>dark theme</span>
+  </button>
+</div>
+
 <h1 id="title">{{page.title}}<br><small>{{page.subtitle}}</small></h1>
 
 {% if page.author %}
@@ -29,7 +36,6 @@ layout: compress
   <li class="list-inline-item"><sup class="sup-left">{{ institute.id }}</sup>{{ institute.name }}</li>
 {% endfor %}
 </ul>
-</p>
 {%- unless page.skipequal -%}<p class="small"><sup class="sup-left">*</sup>Equal contribution</p>{% endunless %}
 {% endif %}
 

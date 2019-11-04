@@ -1,6 +1,11 @@
 {% for pub in include.list %}
 <p>
 <strong>{{pub.title}}</strong>
+{% for linkh in pub.local-links %}
+{% for link in linkh %}
+[<a href="{{link[1]}}" class="local-link">{{link[0]}}</a>]
+{% endfor %}
+{% endfor %}
 {% for linkh in pub.links %}
 {% for link in linkh %}
 [<a href="{{link[1]}}">{{link[0]}}</a>]

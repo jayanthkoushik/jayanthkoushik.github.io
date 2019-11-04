@@ -3,7 +3,7 @@ require "uglifier"
 module Jekyll
   module Uglify
     def uglify(input)
-      Uglifier.new.compile(input)
+      Uglifier.new(:harmony=>true).compile(input)
     end
   end
 end

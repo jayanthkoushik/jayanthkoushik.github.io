@@ -7,6 +7,7 @@
     - arxiv: 'https://arxiv.org/abs/1605.09081'
 
 - desc: 'neural-style: Theano/Keras implementation of style transfer algorithms'
-  links:
+  local-links:
     - project: 'neural_style'
+  links:
     - code: 'https://github.com/jayanthkoushik/neural-style'

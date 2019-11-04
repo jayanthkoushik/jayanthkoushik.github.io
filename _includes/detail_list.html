@@ -2,6 +2,11 @@
 {% for item in include.list %}
 <li>
 {{item.desc}}
+{% for linkh in item.local-links %}
+{% for link in linkh %}
+[<a href="{{link[1]}}" class="local-link">{{link[0]}}</a>]
+{% endfor %}
+{% endfor %}
 {% for linkh in item.links %}
 {% for link in linkh %}
 [<a href="{{link[1]}}">{{link[0]}}</a>]

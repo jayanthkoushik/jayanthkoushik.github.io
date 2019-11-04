@@ -13,8 +13,9 @@
 - title: 'Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates'
   equal-authors: ['Hiroaki Hayashi', 'Jayanth Koushik']
   other-authors: ['Graham Neubig']
-  links:
+  local-links:
     - web: eve_paper
+  links:
     - arxiv: 'https://arxiv.org/abs/1611.01505'
     - code: 'https://github.com/rooa/eve'
 
