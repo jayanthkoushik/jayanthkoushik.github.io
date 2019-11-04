@@ -45,7 +45,7 @@ function setTheme(theme, modLinks=true) {
             $(this)[0].href = href + '?' + theme;
         });
 
-        history.replaceState({theme: true}, theme, '?' + theme);
+        history.replaceState({theme: true}, document.title, '?' + theme);
     }
 }
 
