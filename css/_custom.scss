@@ -87,8 +87,7 @@ figure {
 
 h1:not(#title) {
   font-size: 2rem;
-  border-top: 1px solid;
-  padding-top: 0.75rem;
+  padding-top: 1rem;
 }
 
 .header-section-number {
@@ -109,6 +108,9 @@ h1:not(#title) {
   }
   div:first-of-type {
     padding-top: 0.5rem;
+  }
+  div:last-of-type {
+    padding-bottom: 0.75rem;
   }
 }
 
