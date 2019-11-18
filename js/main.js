@@ -6,7 +6,6 @@ permalink: assets/main
 {%- endcapture -%}
 {%- include_relative _jquery-slim.min.js -%}
 {%- include_relative _bootstrap.min.js -%}
-{%- include_relative _ekko-lightbox.min.js -%}
 {%- include_relative _katex.min.js -%}
 {%- include_relative _auto-render.min.js -%}
 {{- customjs | uglify -}}

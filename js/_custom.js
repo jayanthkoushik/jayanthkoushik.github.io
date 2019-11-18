@@ -1,10 +1,3 @@
-$(document).on('click', '[data-toggle="lightbox"]', function (event) {
-    event.preventDefault();
-    $(this).ekkoLightbox({
-        alwaysShowClose: true
-    });
-});
-
 $('#theme-switch').on('click', function () {
     var newTheme = $('body').hasClass('dark-theme') ? 'light' : 'dark';
     setTheme(newTheme);

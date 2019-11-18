@@ -8,6 +8,6 @@
 
 - desc: 'neural-style: Theano/Keras implementation of style transfer algorithms'
   local-links:
-    - project: 'neural_style'
+    - project: 'https://jkoushik.me/neural-style'
   links:
     - code: 'https://github.com/jayanthkoushik/neural-style'
