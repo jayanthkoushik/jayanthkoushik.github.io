@@ -14,7 +14,7 @@
   equal-authors: ['Hiroaki Hayashi', 'Jayanth Koushik']
   other-authors: ['Graham Neubig']
   local-links:
-    - web: eve_paper
+    - web: 'https://jkoushik.me/eve-paper'
   links:
     - arxiv: 'https://arxiv.org/abs/1611.01505'
     - code: 'https://github.com/rooa/eve'

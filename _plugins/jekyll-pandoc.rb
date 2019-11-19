@@ -15,21 +15,7 @@ class Jekyll::Converters::Markdown::PandocProcessor
             content = content.gsub(pat){|r| "<abbr title='#{acro[1]}'>#{r[$1]}" + (r[3] == "p" || r[4] == "p" ? "s" : "") + "</abbr>"}
         end
 
-        @converter = PandocRuby.new(content,
-                                    :from => :"markdown-markdown_in_html_blocks")
-        @converter.to_html(:katex,
-                           :N,
-                           :bibliography => Dir.glob("_includes/references/*.bib").join(" --bibliography "),
-                           :"default-image-extension" => :"png",
-                           :F => :"pandoc-crossref",
-                           :filter => :"pandoc-citeproc",
-                           :csl => :"_includes/references/style.csl",
-                           :M =>    :"linkReferences=true\
-                                   -M link-citations=true\
-                                   -M figPrefix=Figure\
-                                   -M eqnPrefix=Equation\
-                                   -M tblPrefix=Table\
-                                   -M lstPrefix=List\
-                                   -M secPrefix=Section")
+        @converter = PandocRuby.new(content, :from => :"markdown-markdown_in_html_blocks")
+        @converter.to_html(:katex)
     end
 end
