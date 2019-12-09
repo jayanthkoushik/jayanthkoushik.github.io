@@ -20,6 +20,9 @@ $(document).ready(function () {
     } else {
         setTheme('light', modLinks=false);
     }
+
+    $('#refs').prepend('<h1>References</h1>');
+    $('.footnotes').prepend('<h1 class="sr-only">Footnotes</h1>');
 });
 
 function setTheme(theme, modLinks=true) {
