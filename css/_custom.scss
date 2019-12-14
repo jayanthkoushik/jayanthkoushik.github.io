@@ -81,7 +81,7 @@ figure {
   padding-left: 2px;
 }
 
-h1 {
+h1:not(#title) {
   font-size: 2rem;
   padding-top: 1rem;
 }
