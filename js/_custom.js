@@ -6,7 +6,6 @@ $('#theme-switch').on('click', function () {
 $(document).ready(function () {
     renderMathInElement(document.body);
 
-    $('#theme-switch').prop('disabled', false);
     var wantDark = getURLParameter('dark');
     var wantLight = getURLParameter('light');
 
@@ -33,7 +32,23 @@ function setTheme(theme, modLinks=true) {
     }
 
     var otherTheme = theme === 'dark' ? 'light' : 'dark';
-    $('#theme-switch span').text(otherTheme + ' theme');
+    // svg sources from https://github.com/tabler/tabler-icons
+    if (otherTheme === 'dark') {
+        // moon icon
+        $('#theme-switch').html('\
+          <svg style="fill: currentColor">\
+            <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />\
+          </svg>\
+        ');
+    } else {
+        // sun icon
+        $('#theme-switch').html('\
+          <svg style="fill: none">\
+            <circle cx="12" cy="12" r="4" />\
+            <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />\
+          </svg>\
+        ');
+    }
 
     if (modLinks === true) {
         $('.local-link').each(function() {

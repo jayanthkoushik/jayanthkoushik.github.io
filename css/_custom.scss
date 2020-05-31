@@ -31,11 +31,15 @@ body.dark-theme {
 }
 
 #theme-switch {
-  text-decoration: none;
-  span {
-    text-decoration: underline;
-    font-weight: light;
-    color: rgba(128, 128, 128, 0.7);
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 

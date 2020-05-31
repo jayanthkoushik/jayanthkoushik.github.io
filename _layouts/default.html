@@ -13,14 +13,13 @@ layout: compress
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-12 col-sm-12 col-md-11 col-lg-9 col-xl-8">
-<div class="text-right">
-  <!-- disabled by default in case javascript is unavailable -->
-  <button class="btn btn-link" id="theme-switch" disabled>
-    <span>dark theme</span>
-  </button>
-</div>
 
-<h1 id="title">{{page.title}}<br><small>{{page.subtitle}}</small></h1>
+<h1 id="title">
+  <small aria-disabled="true" id="theme-switch" class="d-block d-sm-inline text-right float-sm-right mb-n2 mt-n3 my-sm-auto ml-sm-1"></small>
+  {{page.title}}
+  <br>
+  <small>{{page.subtitle}}</small>
+</h1>
 
 {{content}}
 
