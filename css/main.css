@@ -6,4 +6,4 @@ permalink: assets/main
 {%- endcapture -%}
 {%- include_relative _bootstrap.min.css -%}
 {%- include_relative _katex.min.css -%}
-{{- customcss | sassc -}}
+{{- customcss | sasscc -}}

@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~>3.7.4'
+gem 'jekyll'
+gem 'sassc'
 gem 'pandoc-ruby'
 gem 'uglifier'
