@@ -1,0 +1,25 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+    - source
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jayanthkoushik/paje@master
+      with:
+        setupscript: |
+            cp CNAME /www
+            cp robots.txt /www
+            cp -r css /www
+            cp -r pages /www
+            cp -r pdfs /www
+            cp -r _data /www
+            cp _includes/* /www/_includes/
+        targetbranch: master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

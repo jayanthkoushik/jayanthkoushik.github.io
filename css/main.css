@@ -1,9 +1,7 @@
 ---
-permalink: assets/main
+permalink: index
 ---
-{%- capture customcss -%}
-  {%- include_relative _custom.scss -%}
+{%- capture localcss -%}
+  {%- include_relative _local.scss -%}
 {%- endcapture -%}
-{%- include_relative _bootstrap.min.css -%}
-{%- include_relative _katex.min.css -%}
-{{- customcss | sasscc -}}
+{{- localcss | sasscc -}}

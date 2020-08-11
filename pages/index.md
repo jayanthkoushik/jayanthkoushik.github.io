@@ -2,6 +2,8 @@
 title: Jayanth Koushik
 layout: default
 permalink: index
+extcss:
+- index.css
 ---
 
 <a title="Email" class="icon-link" href="mailto:jnkoushik@gmail.com"><svg>

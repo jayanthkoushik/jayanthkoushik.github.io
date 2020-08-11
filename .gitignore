@@ -1,8 +1,0 @@
-.vendor
-.bundle
-.sass-cache
-.vscode
-.jekyll-metadata
-.jekyll-cache
-*.DS_Store
-_site
