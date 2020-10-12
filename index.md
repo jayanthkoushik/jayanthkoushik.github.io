@@ -1,6 +1,5 @@
 ---
 title: Jayanth Koushik
-layout: default
 permalink: index
 extcss:
 - index.css
