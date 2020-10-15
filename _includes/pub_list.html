@@ -8,7 +8,7 @@
 {% for link in linkh %} [<a href="{{link[1]}}">{{-link[0] | replace: " ", "&nbsp;"-}}</a>]{% endfor %}
 {%- endfor -%}<br>
 {%- for author in pub.equal-authors -%}
-{{-author | replace: " ", "&nbsp;"-}}<sup class="sup-right">*</sup>{% unless forloop.last %}, {% elsif pub.other-authors %}, {% endunless %}
+{{-author | replace: " ", "&nbsp;"-}}<sup class="sup-right">&ast;</sup>{% unless forloop.last %}, {% elsif pub.other-authors %}, {% endunless %}
 {%- endfor -%}
 {%- for author in pub.other-authors -%}
 {{-author | replace: " ", "&nbsp;"-}}{% unless forloop.last %}, {% endunless %}
@@ -16,4 +16,4 @@
 {%- if pub.status -%} <i>{{-pub.status-}}</i><br> {%- endif -%}
 </p>
 {%- endfor -%}
-<p class="small"><sup class="sup-left">*</sup>Equal contribution</p>
+<p class="small"><sup class="sup-left">&ast;</sup>Equal contribution</p>
