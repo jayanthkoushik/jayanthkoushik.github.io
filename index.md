@@ -3,6 +3,7 @@ title: Jayanth Koushik
 permalink: index
 extcss:
 - index.css
+description: Personal website of Jayanth Koushik.
 ---
 
 <a title="Email" class="icon-link" href="mailto:jnkoushik@gmail.com"><svg>
