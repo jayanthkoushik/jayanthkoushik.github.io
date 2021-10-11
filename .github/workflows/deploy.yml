@@ -16,7 +16,6 @@ jobs:
             cp CNAME /www
             cp robots.txt /www
             cp index.md /www
-            cp -r css /www
             cp -r pdfs /www
             cp -r _data /www
             cp _includes/* /www/_includes/

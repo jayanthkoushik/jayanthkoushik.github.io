@@ -1,7 +1,0 @@
----
-permalink: index
----
-{%- capture localcss -%}
-  {%- include_relative _local.scss -%}
-{%- endcapture -%}
-{{- localcss | sasscc -}}

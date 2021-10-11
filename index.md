@@ -2,8 +2,9 @@
 title: Jayanth Koushik
 permalink: index
 extcss:
-- index.css
+- local.scss
 description: Personal website of Jayanth Koushik.
+nomath: true
 ---
 
 <a title="Email" class="icon-link" href="mailto:jnkoushik@gmail.com"><svg>
