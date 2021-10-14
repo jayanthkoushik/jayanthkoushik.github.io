@@ -10,8 +10,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: ./
+    - uses: actions/checkout@v2
+    - uses: jayanthkoushik/paje@v1
       with:
         setupscript: |
             cp CNAME /www
