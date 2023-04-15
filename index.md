@@ -5,6 +5,7 @@ extcss:
 - local.scss
 description: Personal website of Jayanth Koushik.
 nomath: true
+notoc: true
 ---
 
 <a
