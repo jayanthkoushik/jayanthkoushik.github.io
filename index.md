@@ -43,6 +43,3 @@ and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
 
 # Projects {-}
 {% include detail_list.html list=site.data.projects %}
-
-# Miscellaneous {-}
-{% include detail_list.html list=site.data.miscs %}
