@@ -1,3 +1,15 @@
+- desc: 'corgy: feature rich Python data classes'
+  local-links:
+    - docs: 'https://jkoushik.me/corgy'
+  links:
+    - code: 'https://github.com/jayanthkoushik/corgy'
+
+- desc: 'paje: website creation and deployment system'
+  local-links:
+    - demo: 'https://jkoushik.me/paje'
+  links:
+    - code: 'https://github.com/jayanthkoushik/paje'
+
 - desc: 'torch-gel: PyTorch implementation of group elastic-net'
   links:
     - code: 'https://github.com/jayanthkoushik/torch-gel'
@@ -8,6 +20,6 @@
 
 - desc: 'neural-style: Theano/Keras implementation of style transfer algorithms'
   local-links:
-    - project: 'https://jkoushik.me/neural-style'
+    - demo: 'https://jkoushik.me/neural-style'
   links:
     - code: 'https://github.com/jayanthkoushik/neural-style'

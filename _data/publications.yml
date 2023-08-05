@@ -1,3 +1,17 @@
+- title: 'Deep learning powered real-time identification of insects using citizen science data'
+  other-authors: ['Shivani Chiranjeevi', 'Mojdeh Sadaati', 'Zi K. Deng', 'Jayanth Koushik', 'Talukder Z. Jubery', 'Daren Mueller', "Matthew E. O'Neal", 'Nirav Merchant', 'Aarti Singh', 'Asheesh K. Singh', 'Soumik Sarkar', 'Arti Singh', 'Baskar Ganapathysubramanian']
+  links:
+    - arxiv: 'https://arxiv.org/abs/2306.02507'
+
+- title: 'AlphaNet: Improving Long-Tail Classification By Combining Classifiers'
+  equal-authors: ['Nadine Chang', 'Jayanth Koushik']
+  other-authors: ['Aarti Singh', 'Martial Hebert', 'Yu-Xiong Wang', 'Michael J. Tarr']
+  local-links:
+    - web: 'https://jkoushik.me/alphanet'
+  links:
+    - arxiv: 'https://arxiv.org/abs/2008.07073'
+    - code: 'https://github.com/jayanthkoushik/alphanet'
+
 - title: 'A Brain Phenotype for Stressor‐Evoked Blood Pressure Reactivity'
   other-authors: ['Peter J. Gianaros', 'Lei K. Sheu', 'Fatma Uyar', 'Jayanth Koushik', 'J. Richard Jennings', 'Tor D. Wager', 'Aarti Singh', 'Timothy D. Verstynen']
   status: 'Journal of the American Heart Association, 2017'
