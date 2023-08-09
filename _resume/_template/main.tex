@@ -1,0 +1,106 @@
+\documentclass[letterpaper]{article}
+
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage{geometry}
+\usepackage[inline]{enumitem}
+\usepackage[
+  pdftitle={Resum\'e},%
+  pdfauthor={$me.name$},%
+]{hyperref}
+
+\input{\_template/layout.tex}
+\input{\_template/fonts.tex}
+\input{\_template/cmds.tex}
+
+${ me:_cmdmarkifme() }
+
+\begin{document}
+
+${ me:_hdr() }
+
+\vspace{2em}
+
+%%%%%%%%%%%%
+
+\section*{Education}
+
+\begin{itemize}[itemsep=9pt]
+  $for(education)$
+
+  \item
+  ${ it:_edu() }
+  $sep$
+
+  %%%%
+  $endfor$
+
+\end{itemize}
+
+%%%%%%%%%%%%
+
+\section*{Work Experience}
+
+\begin{itemize}[itemsep=6pt]
+  $for(employment)$
+
+  \item
+  ${ it:_job() }
+  $sep$
+
+  %%%%
+  $endfor$
+
+\end{itemize}
+
+%%%%%%%%%%%%
+
+$if(skills)$
+\section*{Skills}
+
+\begin{itemize*}[label=\(\quad\circ\)]
+  $for(skills)$
+
+  \item \printskill{$it$}
+  $endfor$
+
+\end{itemize*}
+$endif$
+
+%%%%%%%%%%%%
+
+\section*{Presentations}
+
+\begin{itemize}[itemsep=9pt]
+  $for(presentations)$
+
+  \item
+  ${ it:_pub() }
+  $sep$
+
+  %%%%
+  $endfor$
+
+\end{itemize}
+
+%%%%%%%%%%%%
+
+\section*{Publications and Preprints}
+
+\begin{itemize}[itemsep=9pt]
+  $for(pubs)$
+
+  \item
+  ${ it:_pub() }
+  $sep$
+
+  %%%%
+  $endfor$
+
+\end{itemize}
+
+%%%%%%%%%%%%
+
+\printequalcontribnote
+
+\end{document}

@@ -1,0 +1,75 @@
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+
+% Links
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+}
+
+% Section titles
+\titleformat{\section}{\normalfont\scshape\LARGE}{\thesection}{1em}{}[\titlerule]
+
+% HEADER %
+% Title
+\newcommand{\printtitle}[1]{{\Huge\textsc{#1}}}
+% Email
+\newcommand{\printmeemail}[1]{{\small\faEnvelope}\enspace\href{mailto:#1}{\texttt{#1}}}
+% URL
+\newcommand{\printmeurl}[1]{{\small\faGlobe}\enspace\href{#1}{\texttt{#1}}}
+% Position
+\newcommand{\printmeposition}[1]{{\large #1}}
+% Org.
+\newcommand{\printmeorg}[1]{#1}
+
+% EDUCATION %
+% Degree
+\newcommand{\printdegreename}[1]{{\large\textbf{#1}}}
+% Date
+\newcommand{\printdegreedate}[1]{{\small #1}}
+% Inst.
+\newcommand{\printdegreeinst}[1]{\textsc{#1}}
+% Advisors heading
+\newcommand{\printadvisorsheading}[1]{%
+  {%
+    \ifnumcomp{#1+0}{>}{1}%
+      {Advisors}%
+      {Advisor}%
+  }:%
+}
+% Advisor
+\newcommand{\printadvisor}[1]{\mbox{#1}}
+% Awards heading
+\newcommand{\printawardsheading}{Awards:}
+% Award
+\newcommand{\printaward}[1]{{#1}}
+
+% EMPLOYMENT %
+% Job
+\newcommand{\printjobpos}[1]{\textbf{#1}}
+% Date
+\newcommand{\printjobdate}[1]{{\small #1}}
+% Org.
+\newcommand{\printjoborg}[1]{\textsc{#1}}
+
+% Skill
+\newcommand{\printskill}[1]{#1}
+
+% PUBS %
+% Me
+\newcommand{\printpubme}[1]{\underline{#1}}
+% Title
+\newcommand{\printpubtitle}[1]{\textbf{#1}}
+% Link
+\newcommand{\printpublink}[1]{{\footnotesize\textsc{\lowercase{#1}}\>\scriptsize\faExternalLink}}
+% Author
+\newcommand{\printpubauthor}[1]{{\small\textsc{#1}}}
+% Status
+\newcommand{\printpubstatus}[1]{#1}
+% Equal author marker
+\newcommand{\printequalmarker}{\textsuperscript{*}}
+% Equal author note
+\newcommand{\printequalcontribnote}{{\scriptsize\printequalmarker\,Equal contribution.}}

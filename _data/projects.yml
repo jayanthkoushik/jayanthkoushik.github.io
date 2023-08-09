@@ -1,25 +1,18 @@
-- desc: 'corgy: feature rich Python data classes'
-  local-links:
-    - docs: 'https://jkoushik.me/corgy'
+- title: 'corgy: feature rich Python data classes'
   links:
     - code: 'https://github.com/jayanthkoushik/corgy'
+    - docs: 'https://jkoushik.me/corgy'
 
-- desc: 'paje: website creation and deployment system'
-  local-links:
-    - demo: 'https://jkoushik.me/paje'
+- title: 'paje: website creation and deployment system'
   links:
     - code: 'https://github.com/jayanthkoushik/paje'
+    - demo: 'https://jkoushik.me/paje'
 
-- desc: 'torch-gel: PyTorch implementation of group elastic-net'
+- title: 'torch-gel: PyTorch implementation of group elastic-net'
   links:
     - code: 'https://github.com/jayanthkoushik/torch-gel'
 
-- desc: 'Understanding Convolutional Neural Networks'
-  links:
-    - arxiv: 'https://arxiv.org/abs/1605.09081'
-
-- desc: 'neural-style: Theano/Keras implementation of style transfer algorithms'
-  local-links:
-    - demo: 'https://jkoushik.me/neural-style'
+- title: 'neural-style: Theano/Keras implementation of style transfer algorithms'
   links:
     - code: 'https://github.com/jayanthkoushik/neural-style'
+    - demo: 'https://jkoushik.me/neural-style'

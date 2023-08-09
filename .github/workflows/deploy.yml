@@ -14,12 +14,12 @@ jobs:
     - uses: jayanthkoushik/paje@v6
       with:
         setupscript: |
-            cp CNAME /www
-            cp robots.txt /www
-            cp index.md /www
-            cp -r pdfs /www
-            cp -r _data /www
+            cp CNAME /www/
+            cp robots.txt /www/
+            cp index.md /www/
+            cp -r _data /www/
             cp _includes/* /www/_includes/
+            cp _resume/resume.pdf /www/
         targetbranch: master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

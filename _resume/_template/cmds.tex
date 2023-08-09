@@ -1,0 +1,28 @@
+% \markifeqa:
+%   If the argument is less than or equal to the
+%   'equalauthors' counter, call '\printequalmarker'.
+\newcounter{equalauthors}
+\newcommand{\markifeqa}[1]{%
+\ifnumcomp{#1+0}{>}{\theequalauthors}%
+  {}%
+  {\printequalmarker}%
+}
+
+% \phrase:
+%   Prevent breaking on spaces, hyphens in the argument;
+%   also prevent hyphenation.
+%   Taken from: https://tex.stackexchange.com/a/29264.
+\def\phrase{\begingroup\phrasenohyphen
+  \dononbreakablespace
+  \dononbreakablehyphen
+  \dophrase}
+\makeatletter
+\def\phrasenohyphen{%
+  \language\@ifundefined{l@nohyphenation}{\@cclv}{\l@nohyphenation}}
+\makeatother
+\def\dophrase#1{#1\endgroup}
+{\catcode`\ =\active
+\gdef\dononbreakablespace{\catcode`\ =\active\def {\nobreakspace}}}
+{\catcode`\-=\active
+\gdef\dononbreakablehyphen{\catcode`-=\active\def-{\nobreakhyphen}}}
+\def\nobreakhyphen{\hbox{-}\nobreak}

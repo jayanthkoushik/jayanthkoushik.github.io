@@ -1,0 +1,17 @@
+% \markifme:
+%   If the argument is one of the author aliases,
+%   wrap it with '\printpubme'.
+\newcommand{\markifme}[1]{%
+\ifthenelse{%
+$if(it.aliases)$
+$for(it.aliases)$
+  \equal{#1}{$it$}%
+$sep$    \or%
+$endfor$
+$else$
+\equal{#1}{$it.name$}%
+$endif$
+}%
+  {\printpubme{#1}}%
+  {#1}%
+}

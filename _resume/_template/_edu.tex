@@ -1,0 +1,22 @@
+\begin{itemize}[itemsep=0pt]
+
+  % DEGREE %
+  \item \printdegreename{$it.degree$}
+
+  % DEGREE DATE %
+  $if(it.date)$\item \printdegreedate{$it.date$}$endif$
+
+  % SCHOOL %
+  $if(it.institution)$\item \printdegreeinst{$it.institution$}$endif$
+
+  % ADVISOR(S) %
+  $if(it.advisors)$\item \quad \printadvisorsheading{$it.advisors/length$}
+  $for(it.advisors)$\printadvisor{$it$}$sep$, $endfor$
+  $endif$
+  % AWARD(S) %
+  $if(it.awards)$\item \quad \printawardsheading
+  \begin{itemize}[label=\(\diamond\),leftmargin=20pt,itemsep=0pt]
+    $for(it.awards)$\item \printaward{$it$}$endfor$
+  \end{itemize}
+  $endif$
+\end{itemize}

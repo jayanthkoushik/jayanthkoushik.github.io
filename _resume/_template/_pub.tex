@@ -1,0 +1,28 @@
+\begin{itemize}[itemsep=0pt]
+  $if(it.title)$
+
+  % TITLE %
+  \item \printpubtitle{$it.title$}%
+        $if(forprint)$
+        $else$$if(it.links)$
+        $for(it.links/first/pairs)$
+        ~\href{$it.value$}{\printpublink{$it.key$}}
+        $endfor$
+        $endif$
+        $endif$
+  $endif$
+  $if(it.authors)$
+
+  % AUTHORS %
+  \item \setcounter{equalauthors}{$if(it.equal-authors)$$it.equal-authors$$else$0$endif$}
+        $for(it.authors/pairs)$
+        \def\thisauthor{\markifme{$it.value$}}\phrase{\printpubauthor{\thisauthor}\markifeqa{$it.key$}}$sep$,
+        $endfor$.
+  $endif$
+  $if(it.status)$
+
+  % STATUS %
+  \item \printpubstatus{$it.status$}.
+  $endif$
+
+\end{itemize}

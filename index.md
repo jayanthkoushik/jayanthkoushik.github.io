@@ -35,11 +35,25 @@ I am a PhD student at Carnegie Mellon University studying computer vision. I am 
 [Mike Tarr](https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/tarr-michael.html)
 and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
 
-# Publications and Preprints {-}
-{% include pub_list.html list=site.data.publications %}
-
-# Conference Presentations {-}
-{% include pub_list.html list=site.data.presentations %}
-
 # Projects {-}
-{% include detail_list.html list=site.data.projects %}
+
+<ul>
+{% for project in site.data.projects %}
+<li>
+  {{ project.title }}
+  {%- for linkh in project.links -%}
+    {% for link in linkh %} [<a href="{{ link[1] }}">{{ link[0] | replace: " ", "&nbsp;" }}</a>]{% endfor %}
+  {%- endfor -%}
+</li>
+{% endfor %}
+</ul>
+
+# Presentations {-}
+
+{% include work_list.html list=site.data.presentations %}
+
+# Publications and Preprints {-}
+
+{% include work_list.html list=site.data.pubs %}
+
+<p class="small"><sup class="sup-left">&ast;</sup>Equal contribution.</p>

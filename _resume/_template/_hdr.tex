@@ -1,0 +1,22 @@
+\begin{itemize}[itemsep=5pt]
+
+  % NAME %
+  \item \printtitle{$me.name$}
+
+  % EMAIL, URL %
+  \item \printmeemail{$me.email$} \quad \printmeurl{$me.url$}
+
+  % CURRENT POSITION %
+  $if(me.position)$\item \printmeposition{$me.position$}$endif$
+
+  % CURRENT ORGANIZATION(S) %
+  $if(me.org)$\item\vspace{-3pt}
+  \begin{itemize}[itemsep=0pt]
+    $for(me.org)$
+
+    \item \printmeorg{$it$}
+    $endfor$
+
+  \end{itemize}
+  $endif$
+\end{itemize}

@@ -1,7 +1,7 @@
 - title: 'Influence Functions for Black-Box Optimization'
-  other-authors: ['Jayanth Koushik', 'Aarti Singh', 'Michael J. Tarr']
-  status: ['2<sup>nd</sup> Annual Conference on Machine Learning and Engineering (MS&T 2019), Georgia Tech, Georgia']
+  authors: ['J. Koushik', 'A. Singh', 'M. J. Tarr']
+  status: 'Talk at _2^nd^ Annual Conference on Machine Learning and Engineering_ (MS&T 2019)'
 
 - title: 'Influence Functions for Adaptive Stimulus Selection'
-  other-authors: ['Jayanth Koushik', 'Austin Marcus', 'Aarti Singh', 'Michael J. Tarr']
-  status: ['18<sup>th</sup> Annual Meeting of the Vision Sciences Society (VSS 2018)']
+  authors: ['J. Koushik', 'A. Marcus', 'A. Singh', 'M. J. Tarr']
+  status: 'Poster at _18^th^ Annual Meeting of the Vision Sciences Society_ (VSS 2018)'

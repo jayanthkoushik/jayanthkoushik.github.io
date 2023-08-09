@@ -1,0 +1,48 @@
+- title: 'Deep learning powered real-time identification of insects using citizen science data'
+  authors: ['S. Chiranjeevi', 'M. Sadaati', 'Z. K. Deng', 'J. Koushik', 'T. Z. Jubery', 'D. Mueller', "M. E. O'Neal", 'N. Merchant', 'A. Singh', 'A. K. Singh', 'S. Sarkar', 'A. Singh', 'B. Ganapathysubramanian']
+  status: 'Submitted to _Science Advances_ (June 2023)'
+  links:
+    - arxiv: 'https://arxiv.org/abs/2306.02507'
+
+- title: 'AlphaNet: Improving Long-Tail Classification By Combining Classifiers'
+  authors: ['N. Chang', 'J. Koushik', 'A. Singh', 'M. Hebert', 'Y.-X. Wang', 'M. J. Tarr']
+  equal-authors: 2
+  status: 'arXiv:2008.07073 (2023)'
+  links:
+    - arxiv: 'https://arxiv.org/abs/2008.07073'
+    - web: 'https://jkoushik.me/alphanet'
+    - code: 'https://github.com/jayanthkoushik/alphanet'
+
+- title: 'Deep Black-Box Optimization with Influence Functions'
+  authors: ['J. Koushik', 'Michael J. Tarr', 'Aarti Singh']
+  status: 'Preprint (2020)'
+  links:
+    - web: 'https://jkoushik.me/infopt'
+
+- title: 'Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates'
+  authors: ['H. Hayashi', 'J. Koushik', 'G. Neubig']
+  equal-authors: 2
+  status: 'arXiv:1611.01505 (2018)'
+  links:
+    - arxiv: 'https://arxiv.org/abs/1611.01505'
+    - web: 'https://jkoushik.me/eve'
+    - code: 'https://github.com/rooa/eve'
+
+- title: 'A Brain Phenotype for Stressor-Evoked Blood Pressure Reactivity'
+  authors: ['P. J. Gianaros', 'L. K. Sheu', 'F. Uyar', 'J. Koushik', 'J. R. Jennings', 'T. D. Wager', 'A. Singh', 'T. D. Verstynen']
+  status: 'In _Journal of the American Heart Association_ (2017)'
+  links:
+    - jaha: 'https://jaha.ahajournals.org/content/6/9/e006053'
+
+- title: 'Hypothesis Transfer Learning via Transformation Functions'
+  authors: ['S. S. Du', 'J. Koushik', 'A. Singh', 'B. Póczos']
+  status: 'In _31^st^ Conference on Neural Information Processing Systems_ (NIPS 2017)'
+  links:
+    - arxiv: 'https://arxiv.org/abs/1612.01020'
+
+- title: 'Deep Multimodal Fusion for Persuasiveness Prediction'
+  authors: ['B. Nojavanasghari', 'D. Gopinath', 'J. Koushik', 'T. Baltrušaitis', 'L.-P. Morency']
+  equal-authors: 3
+  status: 'In _18^th^ International Conference on Multimodal Interaction_ (ICMI 2016)'
+  links:
+    - 'acm dl': 'https://dl.acm.org/doi/abs/10.1145/2993148.2993176'

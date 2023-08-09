@@ -1,0 +1,17 @@
+{%- for work in include.list -%}
+<p style="text-align: left">
+  <strong>{{ work.title }}</strong>
+  {%- for linkh in work.links -%}
+    {% for link in linkh %} [<a href="{{ link[1] }}">{{ link[0] | replace: " ", "&nbsp;" }}</a>]{% endfor %}
+  {%- endfor -%}<br>
+  {%- if work.authors -%}
+    {% if work.equal-authors %}{% assign nequal = work.equal-authors %}{% else %}{% assign nequal = 0 %}{% endif %}
+    {%- for author in work.authors -%}
+      {{ author | replace: " ", "&nbsp;" }}{%- if forloop.index <= nequal -%}<sup class="sup-right">&ast;</sup>{%- endif -%}{% unless forloop.last %}, {% endunless %}
+    {%- endfor -%}.<br>
+  {%- endif -%}
+  {%- if work.status -%}
+    {{ work.status }}.<br>
+  {%- endif -%}
+</p>
+{%- endfor -%}
