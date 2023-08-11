@@ -32,7 +32,7 @@ title="Twitter" class="icon-link" href="https://twitter.com/jayanth_koushik"><sv
 </svg><span class="noshow">Twitter</span></a>
 
 I am a PhD student at Carnegie Mellon University studying computer vision. I am advised by
-[Mike Tarr](https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/tarr-michael.html)
+[Mike Tarr](https://sites.google.com/andrew.cmu.edu/tarrlab/people/michael-j-tarr)
 and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
 
 # Projects {-}
