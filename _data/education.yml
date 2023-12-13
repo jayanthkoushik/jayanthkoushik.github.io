@@ -1,9 +1,10 @@
 - degree: PhD in Neural Computation and Machine Learning
   institution: Carnegie Mellon University, Pittsburgh, PA
-  date: Jul 2017 -- Sep 2023 (expected)
+  date: Jul 2017 -- Sep 2023
   advisors:
     - Michael J. Tarr
     - Aarti Singh
+  thesis: "Rethinking Object Categorization in Computer Vision"
   awards:
     - BrainHub Presidential Fellowship (2018)
 

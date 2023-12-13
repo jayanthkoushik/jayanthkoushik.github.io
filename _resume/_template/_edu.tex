@@ -13,6 +13,10 @@
   $if(it.advisors)$\item \quad \printadvisorsheading{$it.advisors/length$}
   $for(it.advisors)$\printadvisor{$it$}$sep$, $endfor$
   $endif$
+  % THESIS %
+  $if(it.thesis)$\item \quad \printthesisheading
+  ~\printthesis{$it.thesis$}
+  $endif$
   % AWARD(S) %
   $if(it.awards)$\item \quad \printawardsheading
   \begin{itemize}[label=\(\diamond\),leftmargin=20pt,itemsep=0pt]
