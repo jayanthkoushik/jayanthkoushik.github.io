@@ -1,3 +1,8 @@
+- title: 'shiny-pyseed: opinionated bootstrapper for Python projects'
+  links:
+    - code: 'https://github.com/jayanthkoushik/shiny-pyseed'
+    - docs: 'https://jkoushik.me/shiny-pyseed'
+
 - title: 'corgy: feature rich Python data classes'
   links:
     - code: 'https://github.com/jayanthkoushik/corgy'

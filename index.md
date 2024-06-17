@@ -31,9 +31,17 @@ title="Twitter" class="icon-link" href="https://twitter.com/jayanth_koushik"><sv
     <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z"/>
 </svg><span class="noshow">Twitter</span></a>
 
-I am a PhD student at Carnegie Mellon University studying computer vision. I am advised by
-[Mike Tarr](https://sites.google.com/andrew.cmu.edu/tarrlab/people/michael-j-tarr)
+I am a researcher interested in computer vision. I am particularly
+interested in object categorization from limited data. I have a PhD in
+neural computation and machine learning from Carnegie Mellon University,
+where I was advised by [Mike Tarr](https://sites.google.com/andrew.cmu.edu/tarrlab/people/michael-j-tarr)
 and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
+
+# Publications and Preprints {-}
+
+{% include work_list.html list=site.data.pubs %}
+
+<p class="small"><sup class="sup-left">&ast;</sup>Equal contribution.</p>
 
 # Projects {-}
 
@@ -51,9 +59,3 @@ and [Aarti Singh](https://www.cs.cmu.edu/~aarti/).
 # Presentations {-}
 
 {% include work_list.html list=site.data.presentations %}
-
-# Publications and Preprints {-}
-
-{% include work_list.html list=site.data.pubs %}
-
-<p class="small"><sup class="sup-left">&ast;</sup>Equal contribution.</p>
