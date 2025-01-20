@@ -1,8 +1,8 @@
 - title: 'Deep learning powered real-time identification of insects using citizen science data'
   authors: ['S. Chiranjeevi', 'M. Sadaati', 'Z. K. Deng', 'J. Koushik', 'T. Z. Jubery', 'D. Mueller', "M. E. O'Neal", 'N. Merchant', 'A. Singh', 'A. K. Singh', 'S. Sarkar', 'A. Singh', 'B. Ganapathysubramanian']
-  status: 'In preparation'
+  status: 'In _Proceedings of the National Academy of Sciences_ (PNAS Nexus 2024)'
   links:
-    - arxiv: 'https://arxiv.org/abs/2306.02507'
+    - pnas: 'https://academic.oup.com/pnasnexus/advance-article-abstract/doi/10.1093/pnasnexus/pgae575/7933354'
 
 - title: 'AlphaNet: Improving Long-Tail Classification By Combining Classifiers'
   authors: ['N. Chang', 'J. Koushik', 'A. Singh', 'M. Hebert', 'Y.-X. Wang', 'M. J. Tarr']
